@@ -206,7 +206,7 @@ ul.index code{color:inherit}
   "name": "RDF 1.2 Semantics",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2023-03-23",
+  "datePublished": "2023-03-29",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -1335,20 +1335,20 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "rdf-star",
   "doJsonLd": true,
   "wgPublicList": "public-rdf-star-wg",
-  "publishISODate": "2023-03-23T00:00:00.000Z",
-  "generatedSubtitle": "W3C First Public Working Draft 23 March 2023"
+  "publishISODate": "2023-03-29T00:00:00.000Z",
+  "generatedSubtitle": "W3C First Public Working Draft 29 March 2023"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-WD"></head>
 <body class="h-entry" data-cite="RDF11-CONCEPTS"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">RDF 1.2 Semantics</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#FPWD">W3C First Public Working Draft</a> <time class="dt-published" datetime="2023-03-23">23 March 2023</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#FPWD">W3C First Public Working Draft</a> <time class="dt-published" datetime="2023-03-29">29 March 2023</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/2023/WD-rdf12-semantics-20230323/">https://www.w3.org/TR/2023/WD-rdf12-semantics-20230323/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2023/WD-rdf12-semantics-20230329/">https://www.w3.org/TR/2023/WD-rdf12-semantics-20230329/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/rdf12-semantics/">https://www.w3.org/TR/rdf12-semantics/</a>
@@ -1548,9 +1548,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         None of the <a href="#dfn-semantic-extension" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semantic-extension-5">semantic extension</a>s normatively defined in this document
         impose such syntactic restrictions on RDF graphs.</p>
 
-      <p>All entailment regimes <em class="rfc2119">MUST</em> be <dfn class="no-export lint-ignore" data-noexport="" id="dfn-monotonic" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">monotonic</dfn> extensions
+      <p>All entailment regimes <em class="rfc2119">MUST</em> be <dfn class="export" data-export="" id="dfn-monotonic" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">monotonic</dfn> extensions
         of the simple entailment regime described in the document,
-        in the sense that if A simply <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" id="ref-for-index-term-entail-1">entail</a>s B then A also entails B under any extended notion of entailment,
+        in the sense that if A simply <a href="#dfn-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-entail-1">entail</a>s B then A also entails B under any extended notion of entailment,
         provided that any syntactic conditions of the extension are also satisfied.
         Put another way, a <a href="#dfn-semantic-extension" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-semantic-extension-6">semantic extension</a> cannot "cancel" an entailment
         made by a weaker entailment regime,
@@ -1586,15 +1586,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       any compatible kind of interpretation in general,
       but if clear from the context might refer to a specific kind of interpretation.</p>
 
-    <p>The words <dfn id="dfn-denote" data-lt="denote" data-local-lt="denoted" class="externalDFN" data-no-export="" data-dfn-type="dfn"><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" id="ref-for-index-term-denotes-1">denotes</a></dfn>
-      and <dfn id="dfn-refers-to" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">refers to</dfn>
+    <p>The words <dfn data-lt="denote|denotes|denoted" data-local-lt="denoted" id="dfn-denote" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">denotes</dfn> and <dfn id="dfn-refers-to" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">refers to</dfn>
       are used interchangeably as synonyms for the relationship between an <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iri-2">IRI</a> or <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literal-2">literal</a>
       and what it refers to in a given interpretation,
-      itself called the <dfn id="dfn-denotation" class="externalDFN" data-no-export="" data-dfn-type="dfn"><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-referent">denotation</a></dfn>
-      or <dfn id="dfn-referent" class="externalDFN" data-no-export="" data-dfn-type="dfn"><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-referent">referent</a></dfn>.
+      itself called the <dfn class="export" data-export="" id="dfn-denotation" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">denotation</dfn>
+      or <dfn class="export" data-export="" id="dfn-referent" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">referent</dfn>.
       IRI meanings may also be determined by other constraints external to the RDF semantics;
       when we wish to refer to such an externally defined naming relationship,
-      we will use the word <dfn class="no-export lint-ignore" data-local-lt="identified" data-noexport="" data-lt="identify|identified" data-plurals="identifies" id="dfn-identify" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">identify</dfn> and its cognates.
+      we will use the word <dfn data-local-lt="identified" data-lt="identify|identified" data-plurals="identifies" id="dfn-identify" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">identify</dfn> and its cognates.
       For example, the fact that the IRI <code>http://www.w3.org/2001/XMLSchema#decimal</code>
       is widely used as the name of a datatype described in the XML Schema document [<cite><a class="bibref" data-link-type="biblio" href="#bib-xmlschema11-2" title="W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes">XMLSCHEMA11-2</a></cite>]
       might be described by saying that the IRI <em>identifies</em> that datatype.
@@ -1639,7 +1638,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       and if H is an instance of G then every triple in H is an instance of at least one triple
       in G.</p>
 
-    <p>An <dfn class="no-export lint-ignore" data-noexport="" id="dfn-instance-with-respect-to" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">instance with respect to</dfn> a vocabulary
+    <p>An <dfn class="export" data-export="" id="dfn-instance-with-respect-to" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">instance with respect to</dfn> a vocabulary
       V is an <a href="#dfn-instance" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-instance-1">instance</a> in which all the
       <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-3">names</a> in the instance that were substituted
       for blank nodes in the original are <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-4">names</a>
@@ -1697,7 +1696,7 @@ _:x ex:p _:x .</code></pre>
       the occurrences of "<code>_:x</code>" in one document
       will identify a different blank node than the one in the graph described by the other document.
       When graphs are formed by combining RDF from multiple sources,
-      it may be necessary to <dfn class="no-export lint-ignore" data-noexport="" id="dfn-standardize" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">standardize</dfn> apart the blank node identifiers
+      it may be necessary to <dfn id="dfn-standardize" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">standardize</dfn> apart the blank node identifiers
       by replacing them by others which do not occur in the other document(s).
       For example, the two graphs represented  by the following texts:</p>
 
@@ -1735,10 +1734,10 @@ _:x ex:p _:x .</code></pre>
       In general, the union of a set of RDF graphs accurately represents the same semantic content
       as the graphs themselves, whether or not they share blank nodes.</p>
 
-    <p>A related operation, called <dfn class="no-export lint-ignore" data-noexport="" id="dfn-merging" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">merging</dfn>,
+    <p>A related operation, called <dfn class="export" data-export="" id="dfn-merging" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">merging</dfn>,
       takes the union after forcing any shared blank nodes,
       which occur in more than one graph, to be distinct in each graph.
-      The resulting graph is called the <dfn class="no-export lint-ignore" data-noexport="" id="dfn-merge" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">merge</dfn>.
+      The resulting graph is called the <dfn class="export" data-export="" id="dfn-merge" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">merge</dfn>.
       The merge of <a href="#dfn-subgraph" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-subgraph-3">subgraphs</a> of a graph may be larger than the original graph.
       For example, the result of merging the two singleton subgraphs of the three-node graph</p>
 
@@ -1805,7 +1804,7 @@ _:x ex:p _:x .</code></pre>
     supporting decidable algorithms.
     Details are given in <a href="#finite_interpretations" class="sectionRef sec-ref"><bdi class="secno">B. </bdi>Finite interpretations</a>. </p>
 
-  <p>IEXT(x), called the <dfn class="no-export lint-ignore" data-noexport="" id="dfn-extension" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">extension</dfn> of x,
+  <p>IEXT(x), called the <dfn class="export" data-export="" id="dfn-extension" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">extension</dfn> of x,
     is a set of pairs which identify the arguments for which the property is true,
     that is, a binary relational extension.</p>
 
@@ -1936,9 +1935,9 @@ _:x ex:p _:x .</code></pre>
       E when I(E)=true, that E is (simply) <dfn id="dfn-satisfiable" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">satisfiable</dfn>
       when a simple interpretation exists which <a href="#dfn-satisfies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-satisfies-1">satisfies</a> it,
       otherwise (simply) <dfn id="dfn-unsatisfiable" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">unsatisfiable</dfn>,
-      and that a graph G simply <dfn id="dfn-entail" data-lt="entail" data-local-lt="simple entailment|entailment" class="externalDFN" data-no-export="" data-dfn-type="dfn"><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" id="ref-for-index-term-entail-2">entails</a></dfn>
+      and that a graph G simply <dfn data-lt="entail|entails|simple entailment|entailment" data-local-lt="simple entailment|entailment" id="dfn-entail" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">entails</dfn>
       a graph E when every interpretation which <a href="#dfn-satisfies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-satisfies-2">satisfies</a> G also satisfies E.
-      If two graphs E and F each entail the other then they are logically <dfn id="dfn-equivalent" class="externalDFN" data-no-export="" data-dfn-type="dfn"><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-equivalence" id="ref-for-index-term-equivalent-1">equivalent</a></dfn>.</p>
+      If two graphs E and F each entail the other then they are logically <dfn id="dfn-equivalent" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">equivalent</dfn>.</p>
 
     <p>In later sections these notions will be adapted to other classes of interpretations,
       but throughout this section 'entailment' should be interpreted as meaning simple entailment.</p>
@@ -1955,7 +1954,7 @@ _:x ex:p _:x .</code></pre>
     <p>Any process which constructs a graph E from
       some other graph S is (simply) <dfn id="dfn-valid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">valid</dfn> if S
       <a href="#dfn-simply-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-simply-entail-1">simply entails</a> E in every case,
-      otherwise <dfn class="no-export lint-ignore" data-noexport="" id="dfn-invalid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">invalid</dfn><span id="dfn-invalid.x"></span>.</p>
+      otherwise <dfn class="export" data-export="" id="dfn-invalid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">invalid</dfn><span id="dfn-invalid.x"></span>.</p>
 
     <p>The fact that an inference is valid should not be understood as meaning
       that any RDF application is obliged or required to make the inference.
@@ -2056,7 +2055,7 @@ _:x ex:p _:x .</code></pre>
 <section id="skolemization" class="informative"><div class="header-wrapper"><h2 id="x6-skolemization-informative"><bdi class="secno">6. </bdi>Skolemization (Informative)</h2><a class="self-link" href="#skolemization" aria-label="Permalink for Section 6."></a></div><p><em>This section is non-normative.</em></p>
   
 
-  <p><dfn class="no-export lint-ignore" data-noexport="" id="dfn-skolemization" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Skolemization</dfn> is a transformation on RDF graphs
+  <p><dfn class="export" data-export="" id="dfn-skolemization" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Skolemization</dfn> is a transformation on RDF graphs
     which eliminates blank nodes by replacing them with "new" IRIs,
     which means IRIs which are coined for this purpose and are therefore guaranteed
     to not occur in any other RDF graph (at the time of creation).
@@ -2074,7 +2073,7 @@ _:x ex:p _:x .</code></pre>
   <p class="fact">For any graph H which does not contain any of the "new" IRIs introduced into sk(G),
     sk(G) <a href="#dfn-simply-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-simply-entail-10">simply entails</a> H if and only if G <a href="#dfn-simply-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-simply-entail-11">simply entails</a> H.</p>
 
-  <p>The second property means that a graph is not logically <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-equivalence" id="ref-for-index-term-equivalent-2">equivalent</a> to its skolemization.
+  <p>The second property means that a graph is not logically <a href="#dfn-equivalent" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-equivalent-1">equivalent</a> to its skolemization.
     Nevertheless, they are in a strong sense almost interchangeable, as shown the next two properties. The third property means that even when conclusions are drawn from the skolemized graph which do contain the new vocabulary, these will exactly mirror what could have been derived from the original graph with the original blank nodes in place. The replacement of blank nodes by IRIs does not effectively alter what can be validly derived from the graph, other than by giving new names to what were formerly anonymous entities. The fourth property, which is a consequence of the third, clearly shows that in some sense  a skolemization of G can "stand in for" G as far as entailments are concerned. Using sk(G) instead of G will not affect any entailments which do not involve the new skolem vocabulary.  </p>
 
 </section>
@@ -2126,7 +2125,7 @@ _:x ex:p _:x .</code></pre>
     <dfn id="dfn-lexical-to-value-mapping-0" class="externalDFN" data-no-export="" data-dfn-type="dfn"><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-to-value-mapping" id="ref-for-index-term-lexical-to-value-mapping-1">lexical-to-value mapping</a></dfn>,
     from a lexical space (a set of character strings) to values.
     The function <dfn id="dfn-l2v" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">L2V</dfn> maps datatypes to their lexical-to-value mapping.
-    A literal with datatype d <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" id="ref-for-index-term-denotes-2">denotes</a> the value obtained by applying this mapping
+    A literal with datatype d <a href="#dfn-denote" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-denote-1">denotes</a> the value obtained by applying this mapping
     to the character string sss: L2V(d)(sss).
     If the literal string is not in the lexical space,
     so that the lexical-to-value mapping gives no value for the literal string,
@@ -2216,15 +2215,15 @@ _:x ex:p _:x .</code></pre>
   <section id="D_entailment"><div class="header-wrapper"><h3 id="x7-2-datatype-entailment"><bdi class="secno">7.2 </bdi>Datatype entailment</h3><a class="self-link" href="#D_entailment" aria-label="Permalink for Section 7.2"></a></div>
     
 
-    <p>A graph is (simply) <dfn class="no-export lint-ignore" data-noexport="" id="dfn-d-satisfiable" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">D-satisfiable</dfn> or
-      <dfn class="no-export lint-ignore" data-noexport="" id="dfn-satisfiable-recognizing-d" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">satisfiable recognizing D</dfn> when it has the value true
+    <p>A graph is (simply) <dfn class="export" data-export="" id="dfn-d-satisfiable" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">D-satisfiable</dfn> or
+      <dfn class="export" data-export="" id="dfn-satisfiable-recognizing-d" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">satisfiable recognizing D</dfn> when it has the value true
       in some D-interpretation, and a graph S (simply) <dfn data-plurals="d-entail" id="dfn-d-entails" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">D-entails</dfn> or
       <dfn id="dfn-entails-recognizing-d" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">entails recognizing D</dfn> a graph G when every D-interpretation which
       <a href="#dfn-satisfies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-satisfies-3">satisfies</a> S also D-satisfies G.</p>
 
     <p> Unlike the case with <a href="#dfn-simply-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-simply-entail-13">simple interpretation</a>s,
       it is possible for a graph to have no satisfying D-interpretations
-       i.e. to be <dfn class="no-export lint-ignore" data-lt="D-unsatisfiability|D-unsatisfiable" data-noexport="" id="dfn-d-unsatisfiability" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">D-unsatisfiable</dfn>.
+       i.e. to be <dfn data-lt="D-unsatisfiability|D-unsatisfiable" id="dfn-d-unsatisfiability" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">D-unsatisfiable</dfn>.
        RDF processors <em class="rfc2119">MAY</em> treat an unsatisfiable graph as signaling an error condition,
        but this is not required.</p>
 
@@ -2246,7 +2245,7 @@ _:x ex:p _:x .</code></pre>
     <section id="datatype_entailment_patterns" class="informative"><div class="header-wrapper"><h4 id="x7-2-1-patterns-of-datatype-entailment-informative"><bdi class="secno">7.2.1 </bdi>Patterns of datatype entailment (Informative)</h4><a class="self-link" href="#datatype_entailment_patterns" aria-label="Permalink for Section 7.2.1"></a></div><p><em>This section is non-normative.</em></p>
       
 
-      <p>Unlike <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" id="ref-for-index-term-entail-3">simple entailment</a>, it is not possible to give a single syntactic criterion
+      <p>Unlike <a href="#dfn-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-entail-2">simple entailment</a>, it is not possible to give a single syntactic criterion
         to detect all D-entailments,
         which can hold because of particular properties of the lexical-to-value mappings
         of the <a href="#dfn-recognize" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-recognize-12">recognized</a> datatypes.
@@ -2360,7 +2359,7 @@ _:x ex:p _:x .</code></pre>
       E is <dfn id="dfn-rdf-unsatisfiable" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">RDF unsatisfiable</dfn><strong> (recognizing D)</strong>
       when it has no satisfying <a href="#dfn-rdf-interpretation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-rdf-interpretation-2">RDF interpretation</a> (recognizing D).</p>
 
-    <p>The properties of <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" id="ref-for-index-term-entail-4">simple entailment</a> described earlier do not all apply to <a href="#dfn-rdf-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-rdf-entail-1">RDF entail</a>ment.
+    <p>The properties of <a href="#dfn-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-entail-3">simple entailment</a> described earlier do not all apply to <a href="#dfn-rdf-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-rdf-entail-1">RDF entail</a>ment.
       For example, all the RDF axioms are true in every <a href="#dfn-rdf-interpretation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-rdf-interpretation-3">RDF interpretation</a>,
       and so are <a href="#dfn-rdf-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-rdf-entail-2">RDF entail</a>ed by the empty graph, contradicting <a href="#dfn-interpolation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-interpolation-2">interpolation</a> for RDF entailment. </p>
 
@@ -2715,78 +2714,78 @@ _:x ex:p _:x .</code></pre>
             <th>then S RDFS <a href="#dfn-entails-recognizing-d" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-entails-recognizing-d-1">entails recognizing D</a>:</th>
           </tr>
           <tr>
-           <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs1" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs1</dfn></td>
+           <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs1" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs1</dfn></td>
            <td class="othertable">any IRI aaa in D</td>
            <td class="othertable">aaa <code>rdf:type rdfs:Datatype . </code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs2</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs2</dfn></td>
             <td class="othertable"> aaa <code>rdfs:domain</code> xxx <code>.</code><br>
                 yyy aaa zzz <code>.</code></td>
             <td class="othertable">yyy <code>rdf:type</code> xxx <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs3" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs3</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs3" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs3</dfn></td>
             <td class="othertable">aaa <code>rdfs:range</code> xxx <code>.</code><br>
                 yyy aaa zzz <code>.</code></td>
             <td class="othertable">zzz <code>rdf:type</code> xxx <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs4a" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs4a</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs4a" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs4a</dfn></td>
             <td class="othertable">xxx aaa yyy <code>.</code></td>
             <td class="othertable">xxx <code>rdf:type rdfs:Resource .</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs4b" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs4b</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs4b" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs4b</dfn></td>
             <td class="othertable">xxx aaa yyy<code>.</code></td>
             <td class="othertable">yyy <code>rdf:type rdfs:Resource .</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs5" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs5</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs5" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs5</dfn></td>
             <td class="othertable"> xxx <code>rdfs:subPropertyOf</code> yyy <code>.</code><br>
                 yyy <code>rdfs:subPropertyOf</code> zzz <code>.</code></td>
             <td class="othertable">xxx <code>rdfs:subPropertyOf</code> zzz <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs6" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs6</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs6" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs6</dfn></td>
             <td class="othertable">xxx <code>rdf:type rdf:Property .</code></td>
             <td class="othertable">xxx <code>rdfs:subPropertyOf</code> xxx <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs7" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs7</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs7" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs7</dfn></td>
             <td class="othertable"> aaa <code>rdfs:subPropertyOf</code> bbb <code>.</code><br>
                 xxx aaa yyy <code>.</code></td>
             <td class="othertable">xxx bbb yyy <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs8" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs8</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs8" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs8</dfn></td>
             <td class="othertable">xxx <code>rdf:type rdfs:Class .</code></td>
             <td class="othertable">xxx <code>rdfs:subClassOf rdfs:Resource .</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs9" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs9</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs9" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs9</dfn></td>
             <td class="othertable">xxx <code>rdfs:subClassOf</code> yyy <code>.</code><br>
                 zzz <code>rdf:type</code> xxx <code>.</code></td>
             <td class="othertable">zzz <code>rdf:type</code> yyy <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs10" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs10</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs10" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs10</dfn></td>
             <td class="othertable">xxx <code>rdf:type rdfs:Class .</code></td>
             <td class="othertable">xxx <code>rdfs:subClassOf</code> xxx <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs11" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs11</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs11" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs11</dfn></td>
             <td class="othertable"> xxx <code>rdfs:subClassOf</code> yyy <code>.</code><br>
                 yyy <code>rdfs:subClassOf</code> zzz <code>.</code></td>
             <td class="othertable">xxx <code>rdfs:subClassOf</code> zzz <code>.</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs12" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs12</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs12" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs12</dfn></td>
             <td class="othertable">xxx <code>rdf:type rdfs:ContainerMembershipProperty .</code></td>
             <td class="othertable">xxx <code>rdfs:subPropertyOf rdfs:member .</code></td>
           </tr>
           <tr>
-            <td class="othertable"><dfn class="no-export lint-ignore" data-noexport="" id="dfn-rdfs13" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs13</dfn></td>
+            <td class="othertable"><dfn class="export" data-export="" id="dfn-rdfs13" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rdfs13</dfn></td>
             <td class="othertable">xxx <code>rdf:type rdfs:Datatype .</code></td>
             <td class="othertable">xxx <code>rdfs:subClassOf rdfs:Literal .</code></td>
           </tr>
@@ -2818,7 +2817,7 @@ _:x ex:p _:x .</code></pre>
 
   <p>Graph names in a dataset may refer to something other than the graph they are paired with.
     This allows IRI referring to other kinds of entities, such as persons,
-    to be used in a dataset to <a href="#dfn-identify" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-identify-9">identify</a> graphs of information relevant to the entity <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" id="ref-for-index-term-denotes-3">denoted</a> by the graph name IRI.</p>
+    to be used in a dataset to <a href="#dfn-identify" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-identify-9">identify</a> graphs of information relevant to the entity <a href="#dfn-denote" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-denote-2">denoted</a> by the graph name IRI.</p>
 
   <p>When a graph name is used inside RDF triples in a dataset it may or may not refer to the graph it names.
     The semantics does not require, nor should RDF engines presume,
@@ -3142,7 +3141,7 @@ _:x ex:p _:x .</code></pre>
     <p>Reification is not a form of quotation. Rather, the reification describes the
       relationship between a token of a triple and the resources that the triple refers
       to. The value of the <code>rdf:subject</code> property is not the
-      subject IRI itself but the thing it <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" id="ref-for-index-term-denotes-4">denotes</a>, and similarly for <code>rdf:predicate</code> and <code>rdf:object</code>.
+      subject IRI itself but the thing it <a href="#dfn-denote" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-denote-3">denotes</a>, and similarly for <code>rdf:predicate</code> and <code>rdf:object</code>.
       For example, if the referent of <code>ex:a</code> is Mount Everest,
       then the subject of the reified triple is also the mountain, not the IRI which refers to it.</p>
 
@@ -3257,7 +3256,7 @@ _:x ex:p _:x .</code></pre>
        _:xxx rdf:_2 ex:a .</code></p>
 
     <p>(If this conclusion were <a href="#dfn-valid" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-valid-1">valid</a>, then the result of
-      adding it to the original graph would be <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" id="ref-for-index-term-entail-5">entail</a>ed by the graph, and this would assert that both elements were in both
+      adding it to the original graph would be <a href="#dfn-entail" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-entail-4">entail</a>ed by the graph, and this would assert that both elements were in both
       positions. This is a consequence of the fact that RDF is a purely
       assertional language.)</p>
 
@@ -3358,7 +3357,7 @@ _:x ex:p _:x .</code></pre>
       in order to rule out such graphs. They may
       exclude interpretations of the collection vocabulary which violate the convention
       that the subject of a 'linked' collection of two-triple items of the form described
-      above, ending with an item ending with <code>rdf:nil</code>, <a data-link-type="dfn" href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" id="ref-for-index-term-denotes-5">denotes</a> a totally
+      above, ending with an item ending with <code>rdf:nil</code>, <a href="#dfn-denote" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-denote-4">denotes</a> a totally
       ordered sequence whose members are the denotations of the <code>rdf:first</code>
       values of the items, in the order got by tracing the <code>rdf:rest</code> properties
       from the subject to <code>rdf:nil</code>. This permits sequences which contain
@@ -3438,12 +3437,20 @@ _:x ex:p _:x .</code></pre>
     <span class="print-only">§7.2</span></li><li>
       <a class="index-term" href="#dfn-datatype-map">datatype map</a> 
     <span class="print-only">§7.</span></li><li>
+      <a class="index-term" href="#dfn-denotation">denotation</a> 
+    <span class="print-only">§4.</span></li><li>
+      <a class="index-term" href="#dfn-denote">denotes</a> 
+    <span class="print-only">§4.</span></li><li>
       <a class="index-term" href="#dfn-empty-graph">empty graph</a> 
     <span class="print-only">§4.</span></li><li>
       <a class="index-term" href="#dfn-entailment-regime">entailment regime</a> 
     <span class="print-only">§3.</span></li><li>
+      <a class="index-term" href="#dfn-entail">entails</a> 
+    <span class="print-only">§5.2</span></li><li>
       <a class="index-term" href="#dfn-entails-recognizing-d">entails recognizing D</a> 
     <span class="print-only">§7.2</span></li><li>
+      <a class="index-term" href="#dfn-equivalent">equivalent</a> 
+    <span class="print-only">§5.2</span></li><li>
       <a class="index-term" href="#dfn-extension">extension</a> 
     <span class="print-only">§5.</span></li><li>
       <a class="index-term" href="#dfn-generalized-rdf-rdfs-closure">generalized RDF (RDFS) closure</a> 
@@ -3530,6 +3537,8 @@ _:x ex:p _:x .</code></pre>
     <span class="print-only">§9.2.1</span></li><li>
       <a class="index-term" href="#dfn-recognize">recognize</a> 
     <span class="print-only">§7.</span></li><li>
+      <a class="index-term" href="#dfn-referent">referent</a> 
+    <span class="print-only">§4.</span></li><li>
       <a class="index-term" href="#dfn-refers-to">refers to</a> 
     <span class="print-only">§4.</span></li><li>
       <a class="index-term" href="#dfn-reification">reification</a> 
@@ -3569,12 +3578,6 @@ _:x ex:p _:x .</code></pre>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#blank-node-identifier" id="index-term-blank-node-identifiers" tabindex="0" aria-haspopup="dialog">blank node identifiers</span>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="index-term-blank-nodes" tabindex="0" aria-haspopup="dialog">blank nodes</span>
-  </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" id="index-term-denotes" tabindex="0" aria-haspopup="dialog">denotes</span>
-  </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" id="index-term-entail" tabindex="0" aria-haspopup="dialog">entail</span>
-  </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-equivalence" id="index-term-equivalent" tabindex="0" aria-haspopup="dialog">equivalent</span>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#section-generalized-rdf" id="index-term-generalized-rdf-triples-graphs-and-datasets" tabindex="0" aria-haspopup="dialog">generalized RDF triples, graphs, and datasets</span>
   </li><li>
@@ -3903,7 +3906,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-monotonic" aria-label="Permalink for definition: monotonic. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -3919,6 +3922,24 @@ _:x ex:p _:x .</code></pre>
       <ul>
       <li>Not referenced in this document.</li>
     </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-denote" aria-label="Links in this document to definition: denotes">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-denote" aria-label="Permalink for definition: denotes. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-denote-1" title="§ 7. Literals and datatypes">§ 7. Literals and datatypes</a> 
+  </li><li>
+    <a href="#ref-for-dfn-denote-2" title="§ 10. RDF Datasets">§ 10. RDF Datasets</a> 
+  </li><li>
+    <a href="#ref-for-dfn-denote-3" title="§ D.1 Reification">§ D.1 Reification</a> 
+  </li><li>
+    <a href="#ref-for-dfn-denote-4" title="§ D.3 RDF collections">§ D.3 RDF collections</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-refers-to" aria-label="Links in this document to definition: refers to">
       <span class="caret"></span>
       <div>
@@ -3935,6 +3956,26 @@ _:x ex:p _:x .</code></pre>
     <a href="#ref-for-dfn-refers-to-4" title="§ 9.1 A note on rdfs:Literal (Informative)">§ 9.1 A note on rdfs:Literal (Informative)</a> 
   </li>
   </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-denotation" aria-label="Links in this document to definition: denotation">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-denotation" aria-label="Permalink for definition: denotation. Activate to close this dialog.">Permalink</a>
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-referent" aria-label="Links in this document to definition: referent">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-referent" aria-label="Permalink for definition: referent. Activate to close this dialog.">Permalink</a>
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-identify" aria-label="Links in this document to definition: identify">
       <span class="caret"></span>
       <div>
@@ -4071,7 +4112,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-instance-with-respect-to" aria-label="Permalink for definition: instance with respect to. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4117,7 +4158,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-merging" aria-label="Permalink for definition: merging. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4127,7 +4168,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-merge" aria-label="Permalink for definition: merge. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4163,7 +4204,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-extension" aria-label="Permalink for definition: extension. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4225,6 +4266,36 @@ _:x ex:p _:x .</code></pre>
     <a href="#ref-for-dfn-unsatisfiable-5" title="§ 9.2.1 Patterns of RDFS entailment (Informative)">§ 9.2.1 Patterns of RDFS entailment (Informative)</a> 
   </li>
   </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-entail" aria-label="Links in this document to definition: entails">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-entail" aria-label="Permalink for definition: entails. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-entail-1" title="§ 3. Semantic Extensions and Entailment Regimes">§ 3. Semantic Extensions and Entailment Regimes</a> 
+  </li><li>
+    <a href="#ref-for-dfn-entail-2" title="§ 7.2.1 Patterns of datatype entailment (Informative)">§ 7.2.1 Patterns of datatype entailment (Informative)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-entail-3" title="§ 8.1 RDF entailment">§ 8.1 RDF entailment</a> 
+  </li><li>
+    <a href="#ref-for-dfn-entail-4" title="§ D.2 RDF containers">§ D.2 RDF containers</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-equivalent" aria-label="Links in this document to definition: equivalent">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-equivalent" aria-label="Permalink for definition: equivalent. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-equivalent-1" title="§ 6. Skolemization (Informative)">§ 6. Skolemization (Informative)</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-valid" aria-label="Links in this document to definition: valid">
       <span class="caret"></span>
       <div>
@@ -4241,7 +4312,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-invalid" aria-label="Permalink for definition: invalid. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4265,7 +4336,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-skolemization" aria-label="Permalink for definition: Skolemization. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4371,7 +4442,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-d-satisfiable" aria-label="Permalink for definition: D-satisfiable. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4381,7 +4452,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-satisfiable-recognizing-d" aria-label="Permalink for definition: satisfiable recognizing D. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4549,7 +4620,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs1" aria-label="Permalink for definition: rdfs1. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4561,7 +4632,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs2" aria-label="Permalink for definition: rdfs2. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4573,7 +4644,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs3" aria-label="Permalink for definition: rdfs3. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4583,7 +4654,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs4a" aria-label="Permalink for definition: rdfs4a. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4593,7 +4664,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs4b" aria-label="Permalink for definition: rdfs4b. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4603,7 +4674,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs5" aria-label="Permalink for definition: rdfs5. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4613,7 +4684,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs6" aria-label="Permalink for definition: rdfs6. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4623,7 +4694,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs7" aria-label="Permalink for definition: rdfs7. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4635,7 +4706,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs8" aria-label="Permalink for definition: rdfs8. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4645,7 +4716,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs9" aria-label="Permalink for definition: rdfs9. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4655,7 +4726,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs10" aria-label="Permalink for definition: rdfs10. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4665,7 +4736,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs11" aria-label="Permalink for definition: rdfs11. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4675,7 +4746,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs12" aria-label="Permalink for definition: rdfs12. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4685,7 +4756,7 @@ _:x ex:p _:x .</code></pre>
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-rdfs13" aria-label="Permalink for definition: rdfs13. Activate to close this dialog.">Permalink</a>
-         
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
@@ -4765,60 +4836,6 @@ _:x ex:p _:x .</code></pre>
     <a href="#ref-for-index-term-blank-nodes-1" title="§ 4. Notation and Terminology">§ 4. Notation and Terminology</a> 
   </li><li>
     <a href="#ref-for-index-term-blank-nodes-2" title="§ 4.1 Shared blank nodes, unions and merges">§ 4.1 Shared blank nodes, unions and merges</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-denotes" aria-label="Links in this document to definition: denotes">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-denote" aria-label="Permalink for definition: denotes. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-denotes-1" title="§ 4. Notation and Terminology">§ 4. Notation and Terminology</a> 
-  </li><li>
-    <a href="#ref-for-index-term-denotes-2" title="§ 7. Literals and datatypes">§ 7. Literals and datatypes</a> 
-  </li><li>
-    <a href="#ref-for-index-term-denotes-3" title="§ 10. RDF Datasets">§ 10. RDF Datasets</a> 
-  </li><li>
-    <a href="#ref-for-index-term-denotes-4" title="§ D.1 Reification">§ D.1 Reification</a> 
-  </li><li>
-    <a href="#ref-for-index-term-denotes-5" title="§ D.3 RDF collections">§ D.3 RDF collections</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-entail" aria-label="Links in this document to definition: entail">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-entailment" aria-label="Permalink for definition: entail. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-entail-1" title="§ 3. Semantic Extensions and Entailment Regimes">§ 3. Semantic Extensions and Entailment Regimes</a> 
-  </li><li>
-    <a href="#ref-for-index-term-entail-2" title="§ 5.2 Simple Entailment">§ 5.2 Simple Entailment</a> 
-  </li><li>
-    <a href="#ref-for-index-term-entail-3" title="§ 7.2.1 Patterns of datatype entailment (Informative)">§ 7.2.1 Patterns of datatype entailment (Informative)</a> 
-  </li><li>
-    <a href="#ref-for-index-term-entail-4" title="§ 8.1 RDF entailment">§ 8.1 RDF entailment</a> 
-  </li><li>
-    <a href="#ref-for-index-term-entail-5" title="§ D.2 RDF containers">§ D.2 RDF containers</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-equivalent" aria-label="Links in this document to definition: equivalent">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-equivalence" aria-label="Permalink for definition: equivalent. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-equivalent-1" title="§ 5.2 Simple Entailment">§ 5.2 Simple Entailment</a> 
-  </li><li>
-    <a href="#ref-for-index-term-equivalent-2" title="§ 6. Skolemization (Informative)">§ 6. Skolemization (Informative)</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-generalized-rdf-triples-graphs-and-datasets" aria-label="Links in this document to definition: generalized RDF triples, graphs, and datasets">

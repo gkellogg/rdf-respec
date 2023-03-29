@@ -179,7 +179,7 @@ ul.index code{color:inherit}
   "name": "RDF 1.2 Turtle",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2023-02-15",
+  "datePublished": "2023-03-29",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -1247,8 +1247,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "rdf-star",
   "doJsonLd": true,
   "wgPublicList": "public-rdf-star-wg",
-  "publishISODate": "2023-02-15T00:00:00.000Z",
-  "generatedSubtitle": "W3C First Public Working Draft 15 February 2023"
+  "publishISODate": "2023-03-29T00:00:00.000Z",
+  "generatedSubtitle": "W3C First Public Working Draft 29 March 2023"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-WD"></head>
 
@@ -1256,12 +1256,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">RDF 1.2 Turtle</h1> <h2 id="subtitle" class="subtitle">Terse RDF Triple Language</h2>
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#FPWD">W3C First Public Working Draft</a> <time class="dt-published" datetime="2023-02-15">15 February 2023</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#FPWD">W3C First Public Working Draft</a> <time class="dt-published" datetime="2023-03-29">29 March 2023</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/2023/WD-rdf12-turtle-20230215/">https://www.w3.org/TR/2023/WD-rdf12-turtle-20230215/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2023/WD-rdf12-turtle-20230329/">https://www.w3.org/TR/2023/WD-rdf12-turtle-20230329/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/rdf12-turtle/">https://www.w3.org/TR/rdf12-turtle/</a>
@@ -1477,7 +1477,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="language-features" class="informative"><div class="header-wrapper"><h2 id="x2-turtle-language"><bdi class="secno">2. </bdi>Turtle Language</h2><a class="self-link" href="#language-features" aria-label="Permalink for Section 2."></a></div><p><em>This section is non-normative.</em></p>
   
   <p>A Turtle document allows writing down an <abbr title="Resource Description Framework">RDF</abbr> graph in a compact textual form.
-    An <abbr title="Resource Description Framework">RDF</abbr> graph is made up of <a href="https://w3c.github.io/rdf-concepts/spec/#rdf-triple" id="ref-for-index-term-triples-1">triples</a>
+    An <abbr title="Resource Description Framework">RDF</abbr> graph is made up of <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-triple" id="ref-for-index-term-triples-1">triples</a>
     consisting of a subject, predicate and object.</p>
   <p>Comments may be given after a '<code>#</code>' that is not part of
     another lexical token and continue to the end of the line.</p>
@@ -1562,9 +1562,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
   <p>
     There are three types of <em><abbr title="Resource Description Framework">RDF</abbr> Term</em> defined in <abbr title="Resource Description Framework">RDF</abbr> Concepts:
-    <a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-1">IRIs</a> (Internationalized Resource Identifiers),
-    <a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-1">literals</a> and
-    <a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-1">blank nodes</a>. Turtle provides a number
+    <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-1">IRIs</a> (Internationalized Resource Identifiers),
+    <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-1">literals</a> and
+    <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-1">blank nodes</a>. Turtle provides a number
     of ways of writing each.
   </p>
 
@@ -1572,7 +1572,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
 
     <p>
-      <a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-2">IRIs</a> may be written as relative or absolute IRIs or prefixed names.
+      <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-2">IRIs</a> may be written as relative or absolute IRIs or prefixed names.
       Relative and absolute IRIs are enclosed in '&lt;' and '&gt;' and
       may contain <a href="#numeric">numeric escape sequences</a> (described below).
       For example <code>&lt;http://example.org/#green-goblin&gt;</code>.
@@ -1698,7 +1698,7 @@ p:subject4 p:predicate4 p:object4 .     # prefixed name, e.g. http://one.example
   <section id="literals"><div class="header-wrapper"><h3 id="x2-5-rdf-literals"><bdi class="secno">2.5 </bdi><abbr title="Resource Description Framework">RDF</abbr> Literals</h3><a class="self-link" href="#literals" aria-label="Permalink for Section 2.5"></a></div>
     
 
-    <p><a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-2">Literals</a> are used to identify values such as strings, numbers, dates.</p>
+    <p><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-2">Literals</a> are used to identify values such as strings, numbers, dates.</p>
 
     <div class="example" id="example-10">
         <div class="marker">
@@ -1723,12 +1723,12 @@ p:subject4 p:predicate4 p:object4 .     # prefixed name, e.g. http://one.example
         e.g. <code>"</code> (<span class="codepoint">U+0022</span>),
         a sequence of permitted characters or <a href="#numeric">numeric escape sequence</a>
         or <a href="#string">string escape sequence</a>, and a final delimiter.
-        The corresponding <a href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="ref-for-index-term-rdf-lexical-form-1"><abbr title="Resource Description Framework">RDF</abbr> lexical form</a>
+        The corresponding <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="ref-for-index-term-rdf-lexical-form-1"><abbr title="Resource Description Framework">RDF</abbr> lexical form</a>
         is the characters between the delimiters,
         after processing any escape sequences.
-        If present, the <a href="https://w3c.github.io/rdf-concepts/spec/#language-tag" id="ref-for-index-term-language-tag-1">language tag</a> is preceded by a '<code>@</code>'
+        If present, the <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag" id="ref-for-index-term-language-tag-1">language tag</a> is preceded by a '<code>@</code>'
         (<span class="codepoint">U+0040</span>).
-        If there is no language tag, there may be a <a href="https://w3c.github.io/rdf-concepts/spec/#datatype-iri" id="ref-for-index-term-datatype-iri-1">datatype IRI</a>,
+        If there is no language tag, there may be a <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri" id="ref-for-index-term-datatype-iri-1">datatype IRI</a>,
         preceeded by '<code>^^</code>'
         (<span class="codepoint">U+005E</span> <span class="codepoint">U+005E</span>).
         The datatype IRI in Turtle may be written using either an
@@ -1865,7 +1865,7 @@ and up to two sequential apostrophes ('').''' .
   <section id="BNodes"><div class="header-wrapper"><h3 id="x2-6-rdf-blank-nodes"><bdi class="secno">2.6 </bdi><abbr title="Resource Description Framework">RDF</abbr> Blank Nodes</h3><a class="self-link" href="#BNodes" aria-label="Permalink for Section 2.6"></a></div>
     
     <p>
-      <a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-2"><abbr title="Resource Description Framework">RDF</abbr> blank nodes</a> in Turtle are expressed
+      <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-2"><abbr title="Resource Description Framework">RDF</abbr> blank nodes</a> in Turtle are expressed
       as <code>_:</code> followed by a blank node label which is a series of name characters.
       The characters in the label are built upon
       <a href="#grammar-production-PN_CHARS_BASE">PN_CHARS_BASE</a>,
@@ -2808,11 +2808,11 @@ _:b3  rdf:rest   rdf:nil .
   
 
   <p>The <abbr title="Resource Description Framework">RDF</abbr> 1.2 Concepts and Abstract Syntax specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-concepts" title="RDF 1.2 Concepts and Abstract Syntax">RDF12-CONCEPTS</a></cite>] defines three types of <em><abbr title="Resource Description Framework">RDF</abbr> Term</em>:
-    <a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-3">IRIs</a>,
-    <a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-3">literals</a> and
-    <a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-3">blank nodes</a>.
+    <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-3">IRIs</a>,
+    <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-3">literals</a> and
+    <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-3">blank nodes</a>.
 
-    Literals are composed of a <a href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="ref-for-index-term-rdf-lexical-form-2">lexical form</a> and an optional <a href="https://w3c.github.io/rdf-concepts/spec/#language-tag" id="ref-for-index-term-language-tag-2">language tag</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-bcp47" title="Tags for Identifying Languages">BCP47</a></cite>] or datatype IRI.
+    Literals are composed of a <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="ref-for-index-term-rdf-lexical-form-2">lexical form</a> and an optional <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag" id="ref-for-index-term-language-tag-2">language tag</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-bcp47" title="Tags for Identifying Languages">BCP47</a></cite>] or datatype IRI.
     An extra type, <code id="prefix" class="dfn">prefix</code>, is used during parsing to map string identifiers to namespace IRIs.
 
     This section maps a string conforming to the grammar in <a href="#sec-grammar-grammar" class="sectionRef sec-ref"><bdi class="secno">6.5 </bdi>Grammar</a>
@@ -2852,7 +2852,7 @@ _:b3  rdf:rest   rdf:nil .
       </li>
 
       <li id="bnodeLabels">Map[<a class="type string" href="#string">string</a>
-        -&gt; <a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-4">blank node</a>] <code class="dfn">bnodeLabels</code>
+        -&gt; <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-4">blank node</a>] <code class="dfn">bnodeLabels</code>
         — A mapping from string to blank node.</li>
 
       <li id="curSubject">RDF_Term <code class="dfn">curSubject</code>
@@ -2880,26 +2880,26 @@ _:b3  rdf:rest   rdf:nil .
         <tr><th>                                                                       production               </th><th>                                                                                       type            </th><th>procedure</th></tr>
       </thead>
       <tbody>
-      <tr id="handle-IRIREF"><td style="text-align:left;"><a class="type IRI" href="#grammar-production-IRIREF">IRIREF                          </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-4">         IRI         </a></td><td>The characters between "&lt;" and "&gt;" are taken, with the <a href="#numeric">numeric escape sequences</a> unescaped, to form the unicode string of the IRI. Relative IRI resolution is performed per <a href="#sec-iri-references" class="sectionRef">Section 6.3</a>.</td></tr>
+      <tr id="handle-IRIREF"><td style="text-align:left;"><a class="type IRI" href="#grammar-production-IRIREF">IRIREF                          </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-4">         IRI         </a></td><td>The characters between "&lt;" and "&gt;" are taken, with the <a href="#numeric">numeric escape sequences</a> unescaped, to form the unicode string of the IRI. Relative IRI resolution is performed per <a href="#sec-iri-references" class="sectionRef">Section 6.3</a>.</td></tr>
       <tr id="handle-PNAME_NS"><td style="text-align:left;" rowspan="2"><a class="type string" href="#grammar-production-PNAME_NS">PNAME_NS                        </a></td><td><a href="#prefix">                         prefix      </a></td><td>When used in a <a href="#grammar-production-prefixID">prefixID</a> or <a href="#grammar-production-sparqlPrefix">sparqlPrefix</a> production, the <code>prefix</code> is the potentially empty unicode string matching the first argument of the rule is a key into the <a href="#namespaces">namespaces map</a>.</td></tr>
-      <tr id="handle-PNAME_NS2">                                                                                                                                                                          <td><a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-5">         IRI         </a></td><td>When used in a <a href="#grammar-production-PrefixedName">PrefixedName</a> production, the <code>iri</code> is the value in the <a href="#namespaces">namespaces map</a> corresponding to the first argument of the rule.</td></tr>
-      <tr id="handle-PNAME_LN"><td style="text-align:left;"><a class="type IRI" href="#grammar-production-PNAME_LN">PNAME_LN                        </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-6">         IRI         </a></td><td>A potentially empty <a href="#prefix">prefix</a> is identified by the first sequence, <code>PNAME_NS</code>. The <a href="#namespaces">namespaces map</a> <em class="rfc2119"><em class="rfc2119">MUST</em></em> have a corresponding <code>namespace</code>. The unicode string of the IRI is formed by unescaping the <a href="#reserved">reserved characters</a> in the second argument, <code>PN_LOCAL</code>, and concatenating this onto the <code>namespace</code>.</td></tr>
+      <tr id="handle-PNAME_NS2">                                                                                                                                                                          <td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-5">         IRI         </a></td><td>When used in a <a href="#grammar-production-PrefixedName">PrefixedName</a> production, the <code>iri</code> is the value in the <a href="#namespaces">namespaces map</a> corresponding to the first argument of the rule.</td></tr>
+      <tr id="handle-PNAME_LN"><td style="text-align:left;"><a class="type IRI" href="#grammar-production-PNAME_LN">PNAME_LN                        </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-6">         IRI         </a></td><td>A potentially empty <a href="#prefix">prefix</a> is identified by the first sequence, <code>PNAME_NS</code>. The <a href="#namespaces">namespaces map</a> <em class="rfc2119"><em class="rfc2119">MUST</em></em> have a corresponding <code>namespace</code>. The unicode string of the IRI is formed by unescaping the <a href="#reserved">reserved characters</a> in the second argument, <code>PN_LOCAL</code>, and concatenating this onto the <code>namespace</code>.</td></tr>
       
-      <tr id="handle-STRING_LITERAL_SINGLE_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_SINGLE_QUOTE">STRING_LITERAL_SINGLE_QUOTE     </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="ref-for-index-term-rdf-lexical-form-3">lexical form</a></td><td>The characters between the outermost "'"s   are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
-      <tr id="handle-STRING_LITERAL_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE            </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="ref-for-index-term-rdf-lexical-form-4">lexical form</a></td><td>The characters between the outermost '"'s   are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
-      <tr id="handle-STRING_LITERAL_LONG_SINGLE_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_LONG_SINGLE_QUOTE">STRING_LITERAL_LONG_SINGLE_QUOTE</a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="ref-for-index-term-rdf-lexical-form-5">lexical form</a></td><td>The characters between the outermost "'''"s are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
-      <tr id="handle-STRING_LITERAL_LONG_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_LONG_QUOTE">STRING_LITERAL_LONG_QUOTE       </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="ref-for-index-term-rdf-lexical-form-6">lexical form</a></td><td>The characters between the outermost '"""'s are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
-      <tr id="handle-LANGTAG"><td style="text-align:left;"><a class="type langTag" href="#grammar-production-LANGTAG">LANGTAG                         </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#language-tag" id="ref-for-index-term-language-tag-3">language tag</a></td><td>The characters following the <code>@</code> form the unicode string of the language tag.</td></tr>
-      <tr id="handle-RDFLiteral"><td style="text-align:left;"><a class="type literal" href="#grammar-production-RDFLiteral">RDFLiteral                      </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-4">     literal     </a></td><td>The literal has a lexical form of the first rule argument, <code>String</code>. If the <code>'^^' iri</code> rule matched, the datatype is <code>iri</code> and the literal has no language tag. If the <code>LANGTAG</code> rule matched, the datatype is <code>rdf:langString</code> and the language tag is <code>LANGTAG</code>. If neither matched, the datatype is <code>xsd:string</code> and the literal has no language tag.</td></tr>
-      <tr id="handle-INTEGER"><td style="text-align:left;"><a class="type integer" href="#grammar-production-INTEGER">INTEGER                         </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-5">     literal     </a></td><td>The literal has a lexical form of the input string, and a datatype of <code>xsd:integer</code>.</td></tr>
-      <tr id="handle-DECIMAL"><td style="text-align:left;"><a class="type decimal" href="#grammar-production-DECIMAL">DECIMAL                         </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-6">     literal     </a></td><td>The literal has a lexical form of the input string, and a datatype of <code>xsd:decimal</code>.</td></tr>
-      <tr id="handle-DOUBLE"><td style="text-align:left;"><a class="type double" href="#grammar-production-DOUBLE">DOUBLE                          </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-7">     literal     </a></td><td>The literal has a lexical form of the input string, and a datatype of <code>xsd:double</code>.</td></tr>
-      <tr id="handle-BooleanLiteral"><td style="text-align:left;"><a class="type boolean" href="#grammar-production-BooleanLiteral">BooleanLiteral                  </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#literal" id="ref-for-index-term-literals-8">     literal     </a></td><td>The literal has a lexical form of the <code>true</code> or <code>false</code>, depending on which matched the input, and a datatype of <code>xsd:boolean</code>.</td></tr>
-      <tr id="handle-BLANK_NODE_LABEL"><td style="text-align:left;"><a class="type bNode" href="#grammar-production-BLANK_NODE_LABEL">BLANK_NODE_LABEL                </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-5">  blank node  </a></td><td>The string matching the second argument, <code>PN_LOCAL</code>, is a key in <a href="#bnodeLabels">bnodeLabels</a>. If there is no corresponding blank node in the map, one is allocated.</td></tr>
-      <tr id="handle-ANON"><td style="text-align:left;"><a class="type bNode" href="#grammar-production-ANON">ANON                            </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-6">  blank node  </a></td><td>A blank node is generated.</td></tr>
-      <tr id="handle-blankNodePropertyList"><td style="text-align:left;"><a class="type bNode" href="#grammar-production-blankNodePropertyList">blankNodePropertyList           </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-7">  blank node  </a></td><td>A blank node is generated. Note the rules for <code>blankNodePropertyList</code> in the next section.</td></tr>
-      <tr id="handle-collection"><td style="text-align:left;" rowspan="2"><a class="type bNode" href="#grammar-production-collection">collection                      </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="ref-for-index-term-blank-nodes-8">  blank node  </a></td><td>For non-empty lists, a blank node is generated. Note the rules for <code>collection</code> in the next section.</td></tr>
-      <tr id="handle-collection2">                                                                                                                                                                          <td><a href="https://w3c.github.io/rdf-concepts/spec/#iri" id="ref-for-index-term-iris-7">         IRI         </a></td><td>For empty lists, the resulting IRI is <code>rdf:nil</code>. Note the rules for <code>collection</code> in the next section.</td></tr>
+      <tr id="handle-STRING_LITERAL_SINGLE_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_SINGLE_QUOTE">STRING_LITERAL_SINGLE_QUOTE     </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="ref-for-index-term-rdf-lexical-form-3">lexical form</a></td><td>The characters between the outermost "'"s   are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
+      <tr id="handle-STRING_LITERAL_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_QUOTE">STRING_LITERAL_QUOTE            </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="ref-for-index-term-rdf-lexical-form-4">lexical form</a></td><td>The characters between the outermost '"'s   are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
+      <tr id="handle-STRING_LITERAL_LONG_SINGLE_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_LONG_SINGLE_QUOTE">STRING_LITERAL_LONG_SINGLE_QUOTE</a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="ref-for-index-term-rdf-lexical-form-5">lexical form</a></td><td>The characters between the outermost "'''"s are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
+      <tr id="handle-STRING_LITERAL_LONG_QUOTE"><td style="text-align:left;"><a class="type lexicalForm" href="#grammar-production-STRING_LITERAL_LONG_QUOTE">STRING_LITERAL_LONG_QUOTE       </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="ref-for-index-term-rdf-lexical-form-6">lexical form</a></td><td>The characters between the outermost '"""'s are taken, with <a href="#numeric">numeric</a> and <a href="#string">string</a> escape sequences unescaped, to form the unicode string of a lexical form.</td></tr>
+      <tr id="handle-LANGTAG"><td style="text-align:left;"><a class="type langTag" href="#grammar-production-LANGTAG">LANGTAG                         </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag" id="ref-for-index-term-language-tag-3">language tag</a></td><td>The characters following the <code>@</code> form the unicode string of the language tag.</td></tr>
+      <tr id="handle-RDFLiteral"><td style="text-align:left;"><a class="type literal" href="#grammar-production-RDFLiteral">RDFLiteral                      </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-4">     literal     </a></td><td>The literal has a lexical form of the first rule argument, <code>String</code>. If the <code>'^^' iri</code> rule matched, the datatype is <code>iri</code> and the literal has no language tag. If the <code>LANGTAG</code> rule matched, the datatype is <code>rdf:langString</code> and the language tag is <code>LANGTAG</code>. If neither matched, the datatype is <code>xsd:string</code> and the literal has no language tag.</td></tr>
+      <tr id="handle-INTEGER"><td style="text-align:left;"><a class="type integer" href="#grammar-production-INTEGER">INTEGER                         </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-5">     literal     </a></td><td>The literal has a lexical form of the input string, and a datatype of <code>xsd:integer</code>.</td></tr>
+      <tr id="handle-DECIMAL"><td style="text-align:left;"><a class="type decimal" href="#grammar-production-DECIMAL">DECIMAL                         </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-6">     literal     </a></td><td>The literal has a lexical form of the input string, and a datatype of <code>xsd:decimal</code>.</td></tr>
+      <tr id="handle-DOUBLE"><td style="text-align:left;"><a class="type double" href="#grammar-production-DOUBLE">DOUBLE                          </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-7">     literal     </a></td><td>The literal has a lexical form of the input string, and a datatype of <code>xsd:double</code>.</td></tr>
+      <tr id="handle-BooleanLiteral"><td style="text-align:left;"><a class="type boolean" href="#grammar-production-BooleanLiteral">BooleanLiteral                  </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="ref-for-index-term-literals-8">     literal     </a></td><td>The literal has a lexical form of the <code>true</code> or <code>false</code>, depending on which matched the input, and a datatype of <code>xsd:boolean</code>.</td></tr>
+      <tr id="handle-BLANK_NODE_LABEL"><td style="text-align:left;"><a class="type bNode" href="#grammar-production-BLANK_NODE_LABEL">BLANK_NODE_LABEL                </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-5">  blank node  </a></td><td>The string matching the second argument, <code>PN_LOCAL</code>, is a key in <a href="#bnodeLabels">bnodeLabels</a>. If there is no corresponding blank node in the map, one is allocated.</td></tr>
+      <tr id="handle-ANON"><td style="text-align:left;"><a class="type bNode" href="#grammar-production-ANON">ANON                            </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-6">  blank node  </a></td><td>A blank node is generated.</td></tr>
+      <tr id="handle-blankNodePropertyList"><td style="text-align:left;"><a class="type bNode" href="#grammar-production-blankNodePropertyList">blankNodePropertyList           </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-7">  blank node  </a></td><td>A blank node is generated. Note the rules for <code>blankNodePropertyList</code> in the next section.</td></tr>
+      <tr id="handle-collection"><td style="text-align:left;" rowspan="2"><a class="type bNode" href="#grammar-production-collection">collection                      </a></td><td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="ref-for-index-term-blank-nodes-8">  blank node  </a></td><td>For non-empty lists, a blank node is generated. Note the rules for <code>collection</code> in the next section.</td></tr>
+      <tr id="handle-collection2">                                                                                                                                                                          <td><a href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="ref-for-index-term-iris-7">         IRI         </a></td><td>For empty lists, the resulting IRI is <code>rdf:nil</code>. Note the rules for <code>collection</code> in the next section.</td></tr>
       </tbody>
     </table>
 
@@ -2909,7 +2909,7 @@ _:b3  rdf:rest   rdf:nil .
     
 
     <p>
-      A Turtle document defines an <a href="https://w3c.github.io/rdf-concepts/spec/#rdf-graph" id="ref-for-index-term-rdf-graph-1"><abbr title="Resource Description Framework">RDF</abbr> graph</a> composed of set of <a href="https://w3c.github.io/rdf-concepts/spec/#rdf-triple" id="ref-for-index-term-triples-2"><abbr title="Resource Description Framework">RDF</abbr> triple</a>s.
+      A Turtle document defines an <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-graph" id="ref-for-index-term-rdf-graph-1"><abbr title="Resource Description Framework">RDF</abbr> graph</a> composed of set of <a href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-triple" id="ref-for-index-term-triples-2"><abbr title="Resource Description Framework">RDF</abbr> triple</a>s.
       The <code><a href="#grammar-production-subject">subject</a></code> production sets the <code class="curSubject">curSubject</code>.
       The <code><a href="#grammar-production-verb">verb</a></code> production sets the <code class="curPredicate">curPredicate</code>.
       Each <a tabindex="30" class="grammarRef" href="#grammar-production-object">object</a> <code>N</code>
@@ -3267,23 +3267,23 @@ _:b3  rdf:rest   rdf:nil .
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-concepts">RDF12-CONCEPTS</a></cite>] defines the following:
         <ul>
           <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#blank-node" id="index-term-blank-nodes" tabindex="0" aria-haspopup="dialog">blank nodes</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" id="index-term-blank-nodes" tabindex="0" aria-haspopup="dialog">blank nodes</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#datatype-iri" id="index-term-datatype-iri" tabindex="0" aria-haspopup="dialog">datatype IRI</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri" id="index-term-datatype-iri" tabindex="0" aria-haspopup="dialog">datatype IRI</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#iri" id="index-term-iris" tabindex="0" aria-haspopup="dialog">IRIs</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" id="index-term-iris" tabindex="0" aria-haspopup="dialog">IRIs</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#language-tag" id="index-term-language-tag" tabindex="0" aria-haspopup="dialog">language tag</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag" id="index-term-language-tag" tabindex="0" aria-haspopup="dialog">language tag</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#literal" id="index-term-literals" tabindex="0" aria-haspopup="dialog">literals</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" id="index-term-literals" tabindex="0" aria-haspopup="dialog">literals</span>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/" id="index-term-rdf-1-2-concepts-and-abstract-syntax" tabindex="0" aria-haspopup="dialog">RDF 1.2 Concepts and Abstract Syntax</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#rdf-graph" id="index-term-rdf-graph" tabindex="0" aria-haspopup="dialog">RDF graph</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-graph" id="index-term-rdf-graph" tabindex="0" aria-haspopup="dialog">RDF graph</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" id="index-term-rdf-lexical-form" tabindex="0" aria-haspopup="dialog">RDF lexical form</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" id="index-term-rdf-lexical-form" tabindex="0" aria-haspopup="dialog">RDF lexical form</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#rdf-triple" id="index-term-triples" tabindex="0" aria-haspopup="dialog">triples</span>
+    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-triple" id="index-term-triples" tabindex="0" aria-haspopup="dialog">triples</span>
   </li>
         </ul>
       </li><li>
@@ -3577,7 +3577,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-blank-nodes" aria-label="Links in this document to definition: blank nodes">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#blank-node" aria-label="Permalink for definition: blank nodes. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-blank-node" aria-label="Permalink for definition: blank nodes. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3597,7 +3597,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-datatype-iri" aria-label="Links in this document to definition: datatype IRI">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#datatype-iri" aria-label="Permalink for definition: datatype IRI. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-datatype-iri" aria-label="Permalink for definition: datatype IRI. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3609,7 +3609,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-iris" aria-label="Links in this document to definition: IRIs">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#iri" aria-label="Permalink for definition: IRIs. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-iri" aria-label="Permalink for definition: IRIs. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3627,7 +3627,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-language-tag" aria-label="Links in this document to definition: language tag">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#language-tag" aria-label="Permalink for definition: language tag. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-language-tag" aria-label="Permalink for definition: language tag. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3643,7 +3643,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-literals" aria-label="Links in this document to definition: literals">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#literal" aria-label="Permalink for definition: literals. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-literal" aria-label="Permalink for definition: literals. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3675,7 +3675,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-graph" aria-label="Links in this document to definition: RDF graph">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#rdf-graph" aria-label="Permalink for definition: RDF graph. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-graph" aria-label="Permalink for definition: RDF graph. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3687,7 +3687,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-lexical-form" aria-label="Links in this document to definition: RDF lexical form">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#lexical-form" aria-label="Permalink for definition: RDF lexical form. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-lexical-form" aria-label="Permalink for definition: RDF lexical form. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
@@ -3703,7 +3703,7 @@ _:b3  rdf:rest   rdf:nil .
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-triples" aria-label="Links in this document to definition: triples">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#rdf-triple" aria-label="Permalink for definition: triples. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-triple" aria-label="Permalink for definition: triples. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
