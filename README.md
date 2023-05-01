@@ -24,7 +24,6 @@
   * https://w3c.github.io/rdf-concepts/spec/#dfn-simple-literal – Broken Fragment – False negative
   * https://w3c.github.io/rdf-concepts/spec/#dfn-named-graph – Broken Fragment – False negative
   * https://w3c.github.io/rdf-concepts/spec/#dfn-subject – Broken Fragment – False negative
-  * https://sw.deri.org/2008/07/n-quads/ – 500 – DERI isn't responding.
 * [rdf-n-triples](rdf-n-triples/FPWD/Overview.html)
   * https://w3c.github.io/rdf-concepts/spec/#dfn-simple-literal – Broken Fragment – False negative
   * https://w3c.github.io/rdf-concepts/spec/#dfn-rdf-graph – Broken Fragment – False negative
