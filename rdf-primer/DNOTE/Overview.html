@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 32.8.0">
+<meta name="generator" content="ReSpec 34.1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 span.example-title{text-transform:none}
@@ -167,7 +167,7 @@ ul.index code{color:inherit}
   "name": "RDF 1.2 Primer",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2023-02-03",
+  "datePublished": "2023-05-04",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -1103,8 +1103,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "rdf-star",
   "doJsonLd": true,
   "wgPublicList": "public-rdf-star-wg",
-  "publishISODate": "2023-02-03T00:00:00.000Z",
-  "generatedSubtitle": "W3C Group Draft Note 03 February 2023"
+  "publishDate": "2023-05-04",
+  "publishISODate": "2023-05-04T00:00:00.000Z",
+  "generatedSubtitle": "W3C Group Draft Note 04 May 2023"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-DNOTE"></head>
 
@@ -1112,12 +1113,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">RDF 1.2 Primer</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#DNOTE">W3C Group Draft Note</a> <time class="dt-published" datetime="2023-02-03">03 February 2023</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#DNOTE">W3C Group Draft Note</a> <time class="dt-published" datetime="2023-05-04">04 May 2023</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/2023/DNOTE-rdf12-primer-20230203/">https://www.w3.org/TR/2023/DNOTE-rdf12-primer-20230203/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2023/DNOTE-rdf12-primer-20230504/">https://www.w3.org/TR/2023/DNOTE-rdf12-primer-20230504/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/rdf12-primer/">https://www.w3.org/TR/rdf12-primer/</a>
@@ -1182,7 +1183,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   concepts of RDF and shows concrete examples of the use of RDF.
   Secs. 3-5 can be used as a minimalist introduction into the key
   elements of RDF. Changes between RDF 1.1
-  and RDF 1.2 are summarized in a separate document: <cite><a data-matched-text="[[[RDF12-NEW]]]" href="https://w3c.github.io/rdf-new/spec/" id="ref-for-index-term-what-s-new-in-rdf-1-2-1">What’s New in RDF 1.2</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-new" title="What’s New in RDF 1.2">RDF12-NEW</a></cite>].</p>
+  and RDF 1.2 are summarized in a separate document: <cite><a data-matched-text="[[[RDF12-NEW]]]" href="https://w3c.github.io/rdf-new/spec/">What’s New in RDF 1.2</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-new" title="What’s New in RDF 1.2">RDF12-NEW</a></cite>].</p>
 </section>
 
 <section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
@@ -1192,7 +1193,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       https://www.w3.org/TR/.</em></p>
   <p>This document is part of the RDF 1.2 document suite. It is an
   informative note on the key concepts of RDF. For a normative
-  specification of RDF 1.2 the reader is referred to the <cite><a data-matched-text="[[[RDF12-CONCEPTS]]]" href="https://w3c.github.io/rdf-concepts/spec/" id="ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-1">RDF 1.2 Concepts and Abstract Syntax</a></cite> document
+  specification of RDF 1.2 the reader is referred to the <cite><a data-matched-text="[[[RDF12-CONCEPTS]]]" href="https://w3c.github.io/rdf-concepts/spec/">RDF 1.2 Concepts and Abstract Syntax</a></cite> document
   [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-concepts" title="RDF 1.2 Concepts and Abstract Syntax">RDF12-CONCEPTS</a></cite>].</p>
 
   <p>
@@ -1222,32 +1223,32 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
 <p>RDF 1.2 Recommendations:</p>
 <ol>
-  <li><cite><a data-matched-text="[[[RDF12-NEW]]]" href="https://w3c.github.io/rdf-new/spec/" id="ref-for-index-term-what-s-new-in-rdf-1-2-2">What’s New in RDF 1.2</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-CONCEPTS]]]" href="https://w3c.github.io/rdf-concepts/spec/" id="ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-2">RDF 1.2 Concepts and Abstract Syntax</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-N-QUADS]]]" href="https://w3c.github.io/rdf-n-quads/spec/" id="ref-for-index-term-rdf-1-2-n-quads-1">RDF 1.2 N-Quads</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-N-TRIPLES]]]" href="https://w3c.github.io/rdf-n-triples/spec/" id="ref-for-index-term-rdf-1-2-n-triples-1">RDF 1.2 N-Triples</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-NEW]]]" href="https://w3c.github.io/rdf-new/spec/">What’s New in RDF 1.2</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-CONCEPTS]]]" href="https://w3c.github.io/rdf-concepts/spec/">RDF 1.2 Concepts and Abstract Syntax</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-N-QUADS]]]" href="https://w3c.github.io/rdf-n-quads/spec/">RDF 1.2 N-Quads</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-N-TRIPLES]]]" href="https://w3c.github.io/rdf-n-triples/spec/">RDF 1.2 N-Triples</a></cite></li>
   <li>RDF 1.2 Primer(this document)</li>
-  <li><cite><a data-matched-text="[[[RDF12-SCHEMA]]]" href="https://w3c.github.io/rdf-schema/spec/" id="ref-for-index-term-rdf-1-2-schema-1">RDF 1.2 Schema</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-SEMANTICS]]]" href="https://w3c.github.io/rdf-semantics/spec/" id="ref-for-index-term-rdf-1-2-semantics-1">RDF 1.2 Semantics</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-TRIG]]]" href="https://w3c.github.io/rdf-trig/spec/" id="ref-for-index-term-rdf-1-2-trig-1">RDF 1.2 TriG</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-TURTLE]]]" href="https://w3c.github.io/rdf-turtle/spec/" id="ref-for-index-term-rdf-1-2-turtle-1">RDF 1.2 Turtle</a></cite></li>
-  <li><cite><a data-matched-text="[[[RDF12-XML]]]" href="https://w3c.github.io/rdf-xml/spec/" id="ref-for-index-term-rdf-1-2-xml-syntax-1">RDF 1.2 XML Syntax</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-SCHEMA]]]" href="https://w3c.github.io/rdf-schema/spec/">RDF 1.2 Schema</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-SEMANTICS]]]" href="https://w3c.github.io/rdf-semantics/spec/">RDF 1.2 Semantics</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-TRIG]]]" href="https://w3c.github.io/rdf-trig/spec/">RDF 1.2 TriG</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-TURTLE]]]" href="https://w3c.github.io/rdf-turtle/spec/">RDF 1.2 Turtle</a></cite></li>
+  <li><cite><a data-matched-text="[[[RDF12-XML]]]" href="https://w3c.github.io/rdf-xml/spec/">RDF 1.2 XML Syntax</a></cite></li>
 </ol>
 
 <p>SPARQL 1.2 Recommendations:</p>
 <ol>
-  <li><cite><a data-matched-text="[[[SPARQL12-NEW]]]" href="https://w3c.github.io/sparql-new/spec/" id="ref-for-index-term-what-s-new-in-sparql-1-2-1">What’s New in SPARQL 1.2</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-CONCEPTS]]]" href="https://w3c.github.io/sparql-concepts/spec/" id="ref-for-index-term-sparql-1-2-concepts-1">SPARQL 1.2 Concepts</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-QUERY]]]" href="https://w3c.github.io/sparql-query/spec/" id="ref-for-index-term-sparql-1-2-query-language-1">SPARQL 1.2 Query Language</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-UPDATE]]]" href="https://w3c.github.io/sparql-update/spec/" id="ref-for-index-term-sparql-1-2-update-1">SPARQL 1.2 Update</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-SERVICE-DESCRIPTION]]]" href="https://w3c.github.io/sparql-service-description/spec/" id="ref-for-index-term-sparql-1-2-service-description-1">SPARQL 1.2 Service Description</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-FEDERATED-QUERY]]]" href="https://w3c.github.io/sparql-federated-query/spec/" id="ref-for-index-term-sparql-1-2-federated-query-1">SPARQL 1.2 Federated Query</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-RESULTS-JSON]]]" href="https://w3c.github.io/sparql-results-json/spec/" id="ref-for-index-term-sparql-1-2-query-results-json-format-1">SPARQL 1.2 Query Results JSON Format</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-RESULTS-CSV-TSV]]]" href="https://w3c.github.io/sparql-results-csv-tsv/spec/" id="ref-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats-1">SPARQL 1.2 Query Results CSV and TSV Formats</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-RESULTS-XML]]]" href="https://w3c.github.io/sparql-results-xml/spec/" id="ref-for-index-term-sparql-1-2-query-results-xml-formats-1">SPARQL 1.2 Query Results XML Formats</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-ENTAILMENT]]]" href="https://w3c.github.io/sparql-entailment/spec/" id="ref-for-index-term-sparql-1-2-entailment-regimes-1">SPARQL 1.2 Entailment Regimes</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-PROTOCOL]]]" href="https://w3c.github.io/sparql-protocol/spec/" id="ref-for-index-term-sparql-1-2-protocol-1">SPARQL 1.2 Protocol</a></cite></li>
-  <li><cite><a data-matched-text="[[[SPARQL12-GRAPH-STORE-PROTOCOL]]]" href="https://w3c.github.io/sparql-graph-store-protocol/spec/" id="ref-for-index-term-sparql-1-2-graph-store-http-protocol-1">SPARQL 1.2 Graph Store HTTP Protocol</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-NEW]]]" href="https://w3c.github.io/sparql-new/spec/">What’s New in SPARQL 1.2</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-CONCEPTS]]]" href="https://w3c.github.io/sparql-concepts/spec/">SPARQL 1.2 Concepts</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-QUERY]]]" href="https://w3c.github.io/sparql-query/spec/">SPARQL 1.2 Query Language</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-UPDATE]]]" href="https://w3c.github.io/sparql-update/spec/">SPARQL 1.2 Update</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-SERVICE-DESCRIPTION]]]" href="https://w3c.github.io/sparql-service-description/spec/">SPARQL 1.2 Service Description</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-FEDERATED-QUERY]]]" href="https://w3c.github.io/sparql-federated-query/spec/">SPARQL 1.2 Federated Query</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-RESULTS-JSON]]]" href="https://w3c.github.io/sparql-results-json/spec/">SPARQL 1.2 Query Results JSON Format</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-RESULTS-CSV-TSV]]]" href="https://w3c.github.io/sparql-results-csv-tsv/spec/">SPARQL 1.2 Query Results CSV and TSV Formats</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-RESULTS-XML]]]" href="https://w3c.github.io/sparql-results-xml/spec/">SPARQL 1.2 Query Results XML Formats</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-ENTAILMENT]]]" href="https://w3c.github.io/sparql-entailment/spec/">SPARQL 1.2 Entailment Regimes</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-PROTOCOL]]]" href="https://w3c.github.io/sparql-protocol/spec/">SPARQL 1.2 Protocol</a></cite></li>
+  <li><cite><a data-matched-text="[[[SPARQL12-GRAPH-STORE-PROTOCOL]]]" href="https://w3c.github.io/sparql-graph-store-protocol/spec/">SPARQL 1.2 Graph Store HTTP Protocol</a></cite></li>
 </ol>
 </section>
 </section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#related">Set of Documents</a></li></ol></li><li class="tocline"><a class="tocxref" href="#section-Introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#section-use-cases"><bdi class="secno">2. </bdi>Why Use RDF?</a></li><li class="tocline"><a class="tocxref" href="#section-data-model"><bdi class="secno">3. </bdi>RDF Data Model</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#section-triple"><bdi class="secno">3.1 </bdi>Triples</a></li><li class="tocline"><a class="tocxref" href="#section-IRI"><bdi class="secno">3.2 </bdi>IRIs</a></li><li class="tocline"><a class="tocxref" href="#section-literal"><bdi class="secno">3.3 </bdi>Literals</a></li><li class="tocline"><a class="tocxref" href="#section-blank-node"><bdi class="secno">3.4 </bdi>Blank nodes</a></li><li class="tocline"><a class="tocxref" href="#section-multiple-graphs"><bdi class="secno">3.5 </bdi>Multiple graphs</a></li></ol></li><li class="tocline"><a class="tocxref" href="#section-vocabulary"><bdi class="secno">4. </bdi>RDF Vocabularies</a></li><li class="tocline"><a class="tocxref" href="#section-graph-syntax"><bdi class="secno">5. </bdi>Writing RDF graphs</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#section-turtle-family"><bdi class="secno">5.1 </bdi>Turtle family of RDF languages</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#section-n-triples"><bdi class="secno">5.1.1 </bdi>N-Triples</a></li><li class="tocline"><a class="tocxref" href="#section-turtle"><bdi class="secno">5.1.2 </bdi>Turtle</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#section-blank-node-representation"><bdi class="secno">5.1.2.1 </bdi>Representation of blank nodes</a></li></ol></li><li class="tocline"><a class="tocxref" href="#section-trig"><bdi class="secno">5.1.3 </bdi>TriG</a></li><li class="tocline"><a class="tocxref" href="#section-n-quads"><bdi class="secno">5.1.4 </bdi>N-Quads</a></li></ol></li><li class="tocline"><a class="tocxref" href="#section-json-ld"><bdi class="secno">5.2 </bdi>JSON-LD</a></li><li class="tocline"><a class="tocxref" href="#section-rdfa"><bdi class="secno">5.3 </bdi>RDFa</a></li><li class="tocline"><a class="tocxref" href="#section-rdfxml"><bdi class="secno">5.4 </bdi>RDF/XML</a></li></ol></li><li class="tocline"><a class="tocxref" href="#section-semantics"><bdi class="secno">6. </bdi>Semantics of RDF Graphs</a></li><li class="tocline"><a class="tocxref" href="#section-data"><bdi class="secno">7. </bdi>RDF Data</a></li><li class="tocline"><a class="tocxref" href="#section-conclusion"><bdi class="secno">8. </bdi>More Information</a></li><li class="tocline"><a class="tocxref" href="#section-Acknowledgments"><bdi class="secno">A. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#acknowledgments-for-rdf-1-1"><bdi class="secno">A.1 </bdi>Acknowledgments for RDF 1.1</a></li><li class="tocline"><a class="tocxref" href="#acknowledgments-for-rdf-1-2"><bdi class="secno">A.2 </bdi>Acknowledgments for RDF 1.2</a></li></ol></li><li class="tocline"><a class="tocxref" href="#section-Changes11"><bdi class="secno">B. </bdi>Changes between RDF 1.0 and RDF 1.1</a></li><li class="tocline"><a class="tocxref" href="#changes-12"><bdi class="secno">C. </bdi>Changes between RDF 1.1 and RDF 1.2</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">D. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">D.1 </bdi>Terms defined by this specification</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">D.2 </bdi>Terms defined by reference</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">E. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">E.1 </bdi>Informative references</a></li></ol></li></ol></nav>
@@ -1397,7 +1398,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     shows the graph resulting from the sample triples.</p>
 
     <figure id="fig1">
-      <img class="graph" src="example-graph.jpg" alt="Informal graphs of the sample triples" height="568" width="850">
+      <img class="graph" src="example-graph.jpg" alt="Informal graphs of the sample triples">
       <figcaption><a class="self-link" href="#fig1">Figure <bdi class="figno">1</bdi></a> <span class="fig-title">Informal graph of the sample triples</span></figcaption>
     </figure>
 
@@ -1516,7 +1517,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     IRI.</p>
 
     <figure id="fig2">
-      <img class="graph" src="example-blank-node.jpg" alt="Blank node example: cypress tree" height="503" width="602">
+      <img class="graph" src="example-blank-node.jpg" alt="Blank node example: cypress tree">
       <figcaption><a class="self-link" href="#fig2">Figure <bdi class="figno">2</bdi></a> <span class="fig-title">Informal blank node example: the background of the Mona Lisa depicts
         an unnamed resource that belongs to the class of cypress trees.</span></figcaption>
     </figure>
@@ -1594,7 +1595,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf11-datasets" title="RDF 1.1: On Semantics of RDF Datasets">RDF11-DATASETS</a></cite>]. </p></div>
 
     <figure id="fig3">
-      <img class="graph" src="example-multiple-graphs.jpg" alt="Informal graph of the sample dataset" height="964" width="850">
+      <img class="graph" src="example-multiple-graphs.jpg" alt="Informal graph of the sample dataset">
       <figcaption><a class="self-link" href="#fig3">Figure <bdi class="figno">3</bdi></a> <span class="fig-title">Informal graph of the sample dataset</span></figcaption>
     </figure>
 
@@ -1833,7 +1834,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>The figure below shows the triples resulting from the example:</p>
 
       <figure id="fig4">
-        <img style="width: 75%" src="example-graph-iris.jpg" alt="Graph of the sample triples" height="579" width="850">
+        <img style="width: 75%" src="example-graph-iris.jpg" alt="Graph of the sample triples">
         <figcaption><a class="self-link" href="#fig4">Figure <bdi class="figno">4</bdi></a> <span class="fig-title">RDF graph resulting from the N-Triples example</span></figcaption>
       </figure>
 
@@ -2021,7 +2022,7 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
       <p>The figure below shows the triples resulting from this example.</p>
 
       <figure id="fig5">
-        <img style="width: 75%" src="example-multiple-graphs-iris.jpg" alt="Triples resulting from the TriG example" height="940" width="850">
+        <img style="width: 75%" src="example-multiple-graphs-iris.jpg" alt="Triples resulting from the TriG example">
         <figcaption><a class="self-link" href="#fig5">Figure <bdi class="figno">5</bdi></a> <span class="fig-title">Triples resulting from the TriG example</span></figcaption>
       </figure>
     </section>
@@ -2580,32 +2581,9 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#literal" id="index-term-literals" tabindex="0" aria-haspopup="dialog">Literals</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/" id="index-term-rdf-1-2-concepts-and-abstract-syntax" tabindex="0" aria-haspopup="dialog">RDF 1.2 Concepts and Abstract Syntax</span>
-  </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#rdf-dataset" id="index-term-rdf-dataset" tabindex="0" aria-haspopup="dialog">RDF dataset</span>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-concepts/spec/#resources-and-statements" id="index-term-resources" tabindex="0" aria-haspopup="dialog">resources</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-n-quads">RDF12-N-QUADS</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-n-quads/spec/" id="index-term-rdf-1-2-n-quads" tabindex="0" aria-haspopup="dialog">RDF 1.2 N-Quads</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-n-triples">RDF12-N-TRIPLES</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-n-triples/spec/" id="index-term-rdf-1-2-n-triples" tabindex="0" aria-haspopup="dialog">RDF 1.2 N-Triples</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-new">RDF12-NEW</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-new/spec/" id="index-term-what-s-new-in-rdf-1-2" tabindex="0" aria-haspopup="dialog">What’s New in RDF 1.2</span>
   </li>
         </ul>
       </li><li>
@@ -2620,8 +2598,6 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-schema/spec/#ch_range" id="index-term-range" tabindex="0" aria-haspopup="dialog">range</span>
   </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-schema/spec/" id="index-term-rdf-1-2-schema" tabindex="0" aria-haspopup="dialog">RDF 1.2 Schema</span>
-  </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-schema/spec/#ch_subclassof" id="index-term-subclassof" tabindex="0" aria-haspopup="dialog">subClassOf</span>
   </li><li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-schema/spec/#ch_subpropertyof" id="index-term-subpropertyof" tabindex="0" aria-haspopup="dialog">subPropertyOf</span>
@@ -2634,113 +2610,6 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
         <ul>
           <li>
     <span class="index-term" data-href="https://w3c.github.io/rdf-semantics/spec/#entailment-regime" id="index-term-entailment-regime" tabindex="0" aria-haspopup="dialog">entailment regime</span>
-  </li><li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-semantics/spec/" id="index-term-rdf-1-2-semantics" tabindex="0" aria-haspopup="dialog">RDF 1.2 Semantics</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-trig">RDF12-TRIG</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-trig/spec/" id="index-term-rdf-1-2-trig" tabindex="0" aria-haspopup="dialog">RDF 1.2 TriG</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-turtle">RDF12-TURTLE</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-turtle/spec/" id="index-term-rdf-1-2-turtle" tabindex="0" aria-haspopup="dialog">RDF 1.2 Turtle</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-rdf12-xml">RDF12-XML</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/rdf-xml/spec/" id="index-term-rdf-1-2-xml-syntax" tabindex="0" aria-haspopup="dialog">RDF 1.2 XML Syntax</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-concepts">SPARQL12-CONCEPTS</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-concepts/spec/" id="index-term-sparql-1-2-concepts" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Concepts</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-entailment">SPARQL12-ENTAILMENT</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-entailment/spec/" id="index-term-sparql-1-2-entailment-regimes" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Entailment Regimes</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-federated-query">SPARQL12-FEDERATED-QUERY</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-federated-query/spec/" id="index-term-sparql-1-2-federated-query" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Federated Query</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-graph-store-protocol">SPARQL12-GRAPH-STORE-PROTOCOL</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-graph-store-protocol/spec/" id="index-term-sparql-1-2-graph-store-http-protocol" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Graph Store HTTP Protocol</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-new">SPARQL12-NEW</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-new/spec/" id="index-term-what-s-new-in-sparql-1-2" tabindex="0" aria-haspopup="dialog">What’s New in SPARQL 1.2</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-protocol">SPARQL12-PROTOCOL</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-protocol/spec/" id="index-term-sparql-1-2-protocol" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Protocol</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-query">SPARQL12-QUERY</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-query/spec/" id="index-term-sparql-1-2-query-language" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Query Language</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-results-csv-tsv">SPARQL12-RESULTS-CSV-TSV</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-results-csv-tsv/spec/" id="index-term-sparql-1-2-query-results-csv-and-tsv-formats" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Query Results CSV and TSV Formats</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-results-json">SPARQL12-RESULTS-JSON</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-results-json/spec/" id="index-term-sparql-1-2-query-results-json-format" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Query Results JSON Format</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-results-xml">SPARQL12-RESULTS-XML</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-results-xml/spec/" id="index-term-sparql-1-2-query-results-xml-formats" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Query Results XML Formats</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-service-description">SPARQL12-SERVICE-DESCRIPTION</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-service-description/spec/" id="index-term-sparql-1-2-service-description" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Service Description</span>
-  </li>
-        </ul>
-      </li><li>
-        [<cite><a class="bibref" data-link-type="biblio" href="#bib-sparql12-update">SPARQL12-UPDATE</a></cite>] defines the following:
-        <ul>
-          <li>
-    <span class="index-term" data-href="https://w3c.github.io/sparql-update/spec/" id="index-term-sparql-1-2-update" tabindex="0" aria-haspopup="dialog">SPARQL 1.2 Update</span>
   </li>
         </ul>
       </li><li>
@@ -2767,23 +2636,23 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
     </dd><dt id="bib-rdf11-datasets">[RDF11-DATASETS]</dt><dd>
       <a href="https://www.w3.org/TR/rdf11-datasets/"><cite>RDF 1.1: On Semantics of RDF Datasets</cite></a>. Antoine Zimmermann.  W3C. 25 February 2014. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/rdf11-datasets/">https://www.w3.org/TR/rdf11-datasets/</a>
     </dd><dt id="bib-rdf12-concepts">[RDF12-CONCEPTS]</dt><dd>
-      <a href="https://w3c.github.io/rdf-concepts/spec/" id="ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-3"><cite>RDF 1.2 Concepts and Abstract Syntax</cite></a>. Richard Cyganiak; David Wood; Markus Lanthaler.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-concepts/spec/" id="ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-4">https://w3c.github.io/rdf-concepts/spec/</a>
+      <a href="https://w3c.github.io/rdf-concepts/spec/"><cite>RDF 1.2 Concepts and Abstract Syntax</cite></a>. Richard Cyganiak; David Wood; Markus Lanthaler.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-concepts/spec/">https://w3c.github.io/rdf-concepts/spec/</a>
     </dd><dt id="bib-rdf12-n-quads">[RDF12-N-QUADS]</dt><dd>
-      <a href="https://w3c.github.io/rdf-n-quads/spec/" id="ref-for-index-term-rdf-1-2-n-quads-2"><cite>RDF 1.2 N-Quads</cite></a>. Gavin Carothers.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-n-quads/spec/" id="ref-for-index-term-rdf-1-2-n-quads-3">https://w3c.github.io/rdf-n-quads/spec/</a>
+      <a href="https://w3c.github.io/rdf-n-quads/spec/"><cite>RDF 1.2 N-Quads</cite></a>. Gavin Carothers.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-n-quads/spec/">https://w3c.github.io/rdf-n-quads/spec/</a>
     </dd><dt id="bib-rdf12-n-triples">[RDF12-N-TRIPLES]</dt><dd>
-      <a href="https://w3c.github.io/rdf-n-triples/spec/" id="ref-for-index-term-rdf-1-2-n-triples-2"><cite>RDF 1.2 N-Triples</cite></a>. Gavin Carothers; Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-n-triples/spec/" id="ref-for-index-term-rdf-1-2-n-triples-3">https://w3c.github.io/rdf-n-triples/spec/</a>
+      <a href="https://w3c.github.io/rdf-n-triples/spec/"><cite>RDF 1.2 N-Triples</cite></a>. Gavin Carothers; Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-n-triples/spec/">https://w3c.github.io/rdf-n-triples/spec/</a>
     </dd><dt id="bib-rdf12-new">[RDF12-NEW]</dt><dd>
-      <a href="https://w3c.github.io/rdf-new/spec/" id="ref-for-index-term-what-s-new-in-rdf-1-2-3"><cite>What’s New in RDF 1.2</cite></a>. David Wood.  W3C. DNOTE. URL: <a href="https://w3c.github.io/rdf-new/spec/" id="ref-for-index-term-what-s-new-in-rdf-1-2-4">https://w3c.github.io/rdf-new/spec/</a>
+      <a href="https://w3c.github.io/rdf-new/spec/"><cite>What’s New in RDF 1.2</cite></a>. David Wood.  W3C. DNOTE. URL: <a href="https://w3c.github.io/rdf-new/spec/">https://w3c.github.io/rdf-new/spec/</a>
     </dd><dt id="bib-rdf12-schema">[RDF12-SCHEMA]</dt><dd>
-      <a href="https://w3c.github.io/rdf-schema/spec/" id="ref-for-index-term-rdf-1-2-schema-2"><cite>RDF 1.2 Schema</cite></a>. Dan Brickley; Ramanathan Guha.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-schema/spec/" id="ref-for-index-term-rdf-1-2-schema-3">https://w3c.github.io/rdf-schema/spec/</a>
+      <a href="https://w3c.github.io/rdf-schema/spec/"><cite>RDF 1.2 Schema</cite></a>. Dan Brickley; Ramanathan Guha.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-schema/spec/">https://w3c.github.io/rdf-schema/spec/</a>
     </dd><dt id="bib-rdf12-semantics">[RDF12-SEMANTICS]</dt><dd>
-      <a href="https://w3c.github.io/rdf-semantics/spec/" id="ref-for-index-term-rdf-1-2-semantics-2"><cite>RDF 1.2 Semantics</cite></a>. Patrick Hayes; Peter Patel-Schneider.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-semantics/spec/" id="ref-for-index-term-rdf-1-2-semantics-3">https://w3c.github.io/rdf-semantics/spec/</a>
+      <a href="https://w3c.github.io/rdf-semantics/spec/"><cite>RDF 1.2 Semantics</cite></a>. Patrick Hayes; Peter Patel-Schneider.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-semantics/spec/">https://w3c.github.io/rdf-semantics/spec/</a>
     </dd><dt id="bib-rdf12-trig">[RDF12-TRIG]</dt><dd>
-      <a href="https://w3c.github.io/rdf-trig/spec/" id="ref-for-index-term-rdf-1-2-trig-2"><cite>RDF 1.2 TriG</cite></a>. Gavin Carothers; Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-trig/spec/" id="ref-for-index-term-rdf-1-2-trig-3">https://w3c.github.io/rdf-trig/spec/</a>
+      <a href="https://w3c.github.io/rdf-trig/spec/"><cite>RDF 1.2 TriG</cite></a>. Gavin Carothers; Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-trig/spec/">https://w3c.github.io/rdf-trig/spec/</a>
     </dd><dt id="bib-rdf12-turtle">[RDF12-TURTLE]</dt><dd>
-      <a href="https://w3c.github.io/rdf-turtle/spec/" id="ref-for-index-term-rdf-1-2-turtle-2"><cite>RDF 1.2 Turtle</cite></a>. Eric Prud'hommeaux; Gavin Carothers.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-turtle/spec/" id="ref-for-index-term-rdf-1-2-turtle-3">https://w3c.github.io/rdf-turtle/spec/</a>
+      <a href="https://w3c.github.io/rdf-turtle/spec/"><cite>RDF 1.2 Turtle</cite></a>. Eric Prud'hommeaux; Gavin Carothers.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-turtle/spec/">https://w3c.github.io/rdf-turtle/spec/</a>
     </dd><dt id="bib-rdf12-xml">[RDF12-XML]</dt><dd>
-      <a href="https://w3c.github.io/rdf-xml/spec/" id="ref-for-index-term-rdf-1-2-xml-syntax-2"><cite>RDF 1.2 XML Syntax</cite></a>. Fabien Gandon; Guus Schreiber.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-xml/spec/" id="ref-for-index-term-rdf-1-2-xml-syntax-3">https://w3c.github.io/rdf-xml/spec/</a>
+      <a href="https://w3c.github.io/rdf-xml/spec/"><cite>RDF 1.2 XML Syntax</cite></a>. Fabien Gandon; Guus Schreiber.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/rdf-xml/spec/">https://w3c.github.io/rdf-xml/spec/</a>
     </dd><dt id="bib-rdfa-lite">[RDFA-LITE]</dt><dd>
       <a href="https://www.w3.org/TR/rdfa-lite/"><cite>RDFa Lite 1.1 - Second Edition</cite></a>. Manu Sporny.  W3C. 17 March 2015. W3C Recommendation. URL: <a href="https://www.w3.org/TR/rdfa-lite/">https://www.w3.org/TR/rdfa-lite/</a>
     </dd><dt id="bib-rdfa-primer">[RDFA-PRIMER]</dt><dd>
@@ -2791,29 +2660,29 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
     </dd><dt id="bib-rfc3987">[RFC3987]</dt><dd>
       <a href="https://www.rfc-editor.org/rfc/rfc3987"><cite>Internationalized Resource Identifiers (IRIs)</cite></a>. M. Duerst; M. Suignard.  IETF. January 2005. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc3987">https://www.rfc-editor.org/rfc/rfc3987</a>
     </dd><dt id="bib-sparql12-concepts">[SPARQL12-CONCEPTS]</dt><dd>
-      <a href="https://w3c.github.io/sparql-concepts/spec/" id="ref-for-index-term-sparql-1-2-concepts-2"><cite>SPARQL 1.2 Concepts</cite></a>. The W3C RDF-star Working Group.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-concepts/spec/" id="ref-for-index-term-sparql-1-2-concepts-3">https://w3c.github.io/sparql-concepts/spec/</a>
+      <a href="https://w3c.github.io/sparql-concepts/spec/"><cite>SPARQL 1.2 Concepts</cite></a>. The W3C RDF-star Working Group.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-concepts/spec/">https://w3c.github.io/sparql-concepts/spec/</a>
     </dd><dt id="bib-sparql12-entailment">[SPARQL12-ENTAILMENT]</dt><dd>
-      <a href="https://w3c.github.io/sparql-entailment/spec/" id="ref-for-index-term-sparql-1-2-entailment-regimes-2"><cite>SPARQL 1.2 Entailment Regimes</cite></a>. Birte Glimm; Chimezie Ogbuji.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-entailment/spec/" id="ref-for-index-term-sparql-1-2-entailment-regimes-3">https://w3c.github.io/sparql-entailment/spec/</a>
+      <a href="https://w3c.github.io/sparql-entailment/spec/"><cite>SPARQL 1.2 Entailment Regimes</cite></a>. Birte Glimm; Chimezie Ogbuji.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-entailment/spec/">https://w3c.github.io/sparql-entailment/spec/</a>
     </dd><dt id="bib-sparql12-federated-query">[SPARQL12-FEDERATED-QUERY]</dt><dd>
-      <a href="https://w3c.github.io/sparql-federated-query/spec/" id="ref-for-index-term-sparql-1-2-federated-query-2"><cite>SPARQL 1.2 Federated Query</cite></a>. Eric Prud'hommeaux; Carlos Buil Aranda.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-federated-query/spec/" id="ref-for-index-term-sparql-1-2-federated-query-3">https://w3c.github.io/sparql-federated-query/spec/</a>
+      <a href="https://w3c.github.io/sparql-federated-query/spec/"><cite>SPARQL 1.2 Federated Query</cite></a>. Eric Prud'hommeaux; Carlos Buil Aranda.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-federated-query/spec/">https://w3c.github.io/sparql-federated-query/spec/</a>
     </dd><dt id="bib-sparql12-graph-store-protocol">[SPARQL12-GRAPH-STORE-PROTOCOL]</dt><dd>
-      <a href="https://w3c.github.io/sparql-graph-store-protocol/spec/" id="ref-for-index-term-sparql-1-2-graph-store-http-protocol-2"><cite>SPARQL 1.2 Graph Store HTTP Protocol</cite></a>. Chimezie Ogbuji.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-graph-store-protocol/spec/" id="ref-for-index-term-sparql-1-2-graph-store-http-protocol-3">https://w3c.github.io/sparql-graph-store-protocol/spec/</a>
+      <a href="https://w3c.github.io/sparql-graph-store-protocol/spec/"><cite>SPARQL 1.2 Graph Store HTTP Protocol</cite></a>. Chimezie Ogbuji.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-graph-store-protocol/spec/">https://w3c.github.io/sparql-graph-store-protocol/spec/</a>
     </dd><dt id="bib-sparql12-new">[SPARQL12-NEW]</dt><dd>
-      <a href="https://w3c.github.io/sparql-new/spec/" id="ref-for-index-term-what-s-new-in-sparql-1-2-2"><cite>What’s New in SPARQL 1.2</cite></a>. The W3C RDF-star Working Group.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-new/spec/" id="ref-for-index-term-what-s-new-in-sparql-1-2-3">https://w3c.github.io/sparql-new/spec/</a>
+      <a href="https://w3c.github.io/sparql-new/spec/"><cite>What’s New in SPARQL 1.2</cite></a>. The W3C RDF-star Working Group.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-new/spec/">https://w3c.github.io/sparql-new/spec/</a>
     </dd><dt id="bib-sparql12-protocol">[SPARQL12-PROTOCOL]</dt><dd>
-      <a href="https://w3c.github.io/sparql-protocol/spec/" id="ref-for-index-term-sparql-1-2-protocol-2"><cite>SPARQL 1.2 Protocol</cite></a>. Lee Feigenbaum; Gregory Williams; Kendall Clark; Elias Torres.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-protocol/spec/" id="ref-for-index-term-sparql-1-2-protocol-3">https://w3c.github.io/sparql-protocol/spec/</a>
+      <a href="https://w3c.github.io/sparql-protocol/spec/"><cite>SPARQL 1.2 Protocol</cite></a>. Lee Feigenbaum; Gregory Williams; Kendall Clark; Elias Torres.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-protocol/spec/">https://w3c.github.io/sparql-protocol/spec/</a>
     </dd><dt id="bib-sparql12-query">[SPARQL12-QUERY]</dt><dd>
-      <a href="https://w3c.github.io/sparql-query/spec/" id="ref-for-index-term-sparql-1-2-query-language-2"><cite>SPARQL 1.2 Query Language</cite></a>. Steven Harris; Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-query/spec/" id="ref-for-index-term-sparql-1-2-query-language-3">https://w3c.github.io/sparql-query/spec/</a>
+      <a href="https://w3c.github.io/sparql-query/spec/"><cite>SPARQL 1.2 Query Language</cite></a>. Steven Harris; Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-query/spec/">https://w3c.github.io/sparql-query/spec/</a>
     </dd><dt id="bib-sparql12-results-csv-tsv">[SPARQL12-RESULTS-CSV-TSV]</dt><dd>
-      <a href="https://w3c.github.io/sparql-results-csv-tsv/spec/" id="ref-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats-2"><cite>SPARQL 1.2 Query Results CSV and TSV Formats</cite></a>. Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-results-csv-tsv/spec/" id="ref-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats-3">https://w3c.github.io/sparql-results-csv-tsv/spec/</a>
+      <a href="https://w3c.github.io/sparql-results-csv-tsv/spec/"><cite>SPARQL 1.2 Query Results CSV and TSV Formats</cite></a>. Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-results-csv-tsv/spec/">https://w3c.github.io/sparql-results-csv-tsv/spec/</a>
     </dd><dt id="bib-sparql12-results-json">[SPARQL12-RESULTS-JSON]</dt><dd>
-      <a href="https://w3c.github.io/sparql-results-json/spec/" id="ref-for-index-term-sparql-1-2-query-results-json-format-2"><cite>SPARQL 1.2 Query Results JSON Format</cite></a>. Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-results-json/spec/" id="ref-for-index-term-sparql-1-2-query-results-json-format-3">https://w3c.github.io/sparql-results-json/spec/</a>
+      <a href="https://w3c.github.io/sparql-results-json/spec/"><cite>SPARQL 1.2 Query Results JSON Format</cite></a>. Andy Seaborne.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-results-json/spec/">https://w3c.github.io/sparql-results-json/spec/</a>
     </dd><dt id="bib-sparql12-results-xml">[SPARQL12-RESULTS-XML]</dt><dd>
-      <a href="https://w3c.github.io/sparql-results-xml/spec/" id="ref-for-index-term-sparql-1-2-query-results-xml-formats-2"><cite>SPARQL 1.2 Query Results XML Formats</cite></a>. Sandro Hawke; Dave Beckett; Jeen Broekstra.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-results-xml/spec/" id="ref-for-index-term-sparql-1-2-query-results-xml-formats-3">https://w3c.github.io/sparql-results-xml/spec/</a>
+      <a href="https://w3c.github.io/sparql-results-xml/spec/"><cite>SPARQL 1.2 Query Results XML Formats</cite></a>. Sandro Hawke; Dave Beckett; Jeen Broekstra.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-results-xml/spec/">https://w3c.github.io/sparql-results-xml/spec/</a>
     </dd><dt id="bib-sparql12-service-description">[SPARQL12-SERVICE-DESCRIPTION]</dt><dd>
-      <a href="https://w3c.github.io/sparql-service-description/spec/" id="ref-for-index-term-sparql-1-2-service-description-2"><cite>SPARQL 1.2 Service Description</cite></a>. Gregory Williams.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-service-description/spec/" id="ref-for-index-term-sparql-1-2-service-description-3">https://w3c.github.io/sparql-service-description/spec/</a>
+      <a href="https://w3c.github.io/sparql-service-description/spec/"><cite>SPARQL 1.2 Service Description</cite></a>. Gregory Williams.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-service-description/spec/">https://w3c.github.io/sparql-service-description/spec/</a>
     </dd><dt id="bib-sparql12-update">[SPARQL12-UPDATE]</dt><dd>
-      <a href="https://w3c.github.io/sparql-update/spec/" id="ref-for-index-term-sparql-1-2-update-2"><cite>SPARQL 1.2 Update</cite></a>. Paula Gearon; Alexandre Passant; Axel Polleres.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-update/spec/" id="ref-for-index-term-sparql-1-2-update-3">https://w3c.github.io/sparql-update/spec/</a>
+      <a href="https://w3c.github.io/sparql-update/spec/"><cite>SPARQL 1.2 Update</cite></a>. Paula Gearon; Alexandre Passant; Axel Polleres.  W3C. W3C Working Draft. URL: <a href="https://w3c.github.io/sparql-update/spec/">https://w3c.github.io/sparql-update/spec/</a>
     </dd><dt id="bib-xmlschema11-2">[XMLSCHEMA11-2]</dt><dd>
       <a href="https://www.w3.org/TR/xmlschema11-2/"><cite>W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes</cite></a>. David Peterson; Sandy Gao; Ashok Malhotra; Michael Sperberg-McQueen; Henry Thompson; Paul V. Biron et al.  W3C. 5 April 2012. W3C Recommendation. URL: <a href="https://www.w3.org/TR/xmlschema11-2/">https://www.w3.org/TR/xmlschema11-2/</a>
     </dd></dl>
@@ -2915,22 +2784,6 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
     <a href="#ref-for-index-term-literals-1" title="§ 3.3 Literals">§ 3.3 Literals</a> 
   </li>
   </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-concepts-and-abstract-syntax" aria-label="Links in this document to definition: RDF 1.2 Concepts and Abstract Syntax">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-concepts/spec/" aria-label="Permalink for definition: RDF 1.2 Concepts and Abstract Syntax. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-1" title="§ Status of This Document">§ Status of This Document</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-2" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-3" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-concepts-and-abstract-syntax-4" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-dataset" aria-label="Links in this document to definition: RDF dataset">
       <span class="caret"></span>
       <div>
@@ -2953,50 +2806,6 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
       <ul>
     <li>
     <a href="#ref-for-index-term-resources-1" title="§ 1. Introduction">§ 1. Introduction</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-n-quads" aria-label="Links in this document to definition: RDF 1.2 N-Quads">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-n-quads/spec/" aria-label="Permalink for definition: RDF 1.2 N-Quads. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-n-quads-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-n-quads-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-n-quads-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-n-triples" aria-label="Links in this document to definition: RDF 1.2 N-Triples">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-n-triples/spec/" aria-label="Permalink for definition: RDF 1.2 N-Triples. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-n-triples-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-n-triples-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-n-triples-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-what-s-new-in-rdf-1-2" aria-label="Links in this document to definition: What’s New in RDF 1.2">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-new/spec/" aria-label="Permalink for definition: What’s New in RDF 1.2. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-what-s-new-in-rdf-1-2-1" title="§ Abstract">§ Abstract</a> 
-  </li><li>
-    <a href="#ref-for-index-term-what-s-new-in-rdf-1-2-2" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-what-s-new-in-rdf-1-2-3" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-what-s-new-in-rdf-1-2-4" title="Reference 2">(2)</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-class" aria-label="Links in this document to definition: Class">
@@ -3047,20 +2856,6 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
     <a href="#ref-for-index-term-range-1" title="§ 4. RDF Vocabularies">§ 4. RDF Vocabularies</a> 
   </li>
   </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-schema" aria-label="Links in this document to definition: RDF 1.2 Schema">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-schema/spec/" aria-label="Permalink for definition: RDF 1.2 Schema. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-schema-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-schema-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-schema-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-subclassof" aria-label="Links in this document to definition: subClassOf">
       <span class="caret"></span>
       <div>
@@ -3107,230 +2902,6 @@ _:x a &lt;http://dbpedia.org/resource/Cypress&gt; .</code></pre>
       <ul>
     <li>
     <a href="#ref-for-index-term-entailment-regime-1" title="§ 6. Semantics of RDF Graphs">§ 6. Semantics of RDF Graphs</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-semantics" aria-label="Links in this document to definition: RDF 1.2 Semantics">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-semantics/spec/" aria-label="Permalink for definition: RDF 1.2 Semantics. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-semantics-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-semantics-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-semantics-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-trig" aria-label="Links in this document to definition: RDF 1.2 TriG">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-trig/spec/" aria-label="Permalink for definition: RDF 1.2 TriG. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-trig-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-trig-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-trig-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-turtle" aria-label="Links in this document to definition: RDF 1.2 Turtle">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-turtle/spec/" aria-label="Permalink for definition: RDF 1.2 Turtle. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-turtle-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-turtle-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-turtle-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-rdf-1-2-xml-syntax" aria-label="Links in this document to definition: RDF 1.2 XML Syntax">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/rdf-xml/spec/" aria-label="Permalink for definition: RDF 1.2 XML Syntax. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-rdf-1-2-xml-syntax-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-rdf-1-2-xml-syntax-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-rdf-1-2-xml-syntax-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-concepts" aria-label="Links in this document to definition: SPARQL 1.2 Concepts">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-concepts/spec/" aria-label="Permalink for definition: SPARQL 1.2 Concepts. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-concepts-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-concepts-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-concepts-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-entailment-regimes" aria-label="Links in this document to definition: SPARQL 1.2 Entailment Regimes">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-entailment/spec/" aria-label="Permalink for definition: SPARQL 1.2 Entailment Regimes. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-entailment-regimes-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-entailment-regimes-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-entailment-regimes-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-federated-query" aria-label="Links in this document to definition: SPARQL 1.2 Federated Query">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-federated-query/spec/" aria-label="Permalink for definition: SPARQL 1.2 Federated Query. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-federated-query-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-federated-query-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-federated-query-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-graph-store-http-protocol" aria-label="Links in this document to definition: SPARQL 1.2 Graph Store HTTP Protocol">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-graph-store-protocol/spec/" aria-label="Permalink for definition: SPARQL 1.2 Graph Store HTTP Protocol. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-graph-store-http-protocol-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-graph-store-http-protocol-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-graph-store-http-protocol-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-what-s-new-in-sparql-1-2" aria-label="Links in this document to definition: What’s New in SPARQL 1.2">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-new/spec/" aria-label="Permalink for definition: What’s New in SPARQL 1.2. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-what-s-new-in-sparql-1-2-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-what-s-new-in-sparql-1-2-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-what-s-new-in-sparql-1-2-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-protocol" aria-label="Links in this document to definition: SPARQL 1.2 Protocol">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-protocol/spec/" aria-label="Permalink for definition: SPARQL 1.2 Protocol. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-protocol-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-protocol-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-protocol-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-query-language" aria-label="Links in this document to definition: SPARQL 1.2 Query Language">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-query/spec/" aria-label="Permalink for definition: SPARQL 1.2 Query Language. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-query-language-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-query-language-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-query-language-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats" aria-label="Links in this document to definition: SPARQL 1.2 Query Results CSV and TSV Formats">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-results-csv-tsv/spec/" aria-label="Permalink for definition: SPARQL 1.2 Query Results CSV and TSV Formats. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-query-results-csv-and-tsv-formats-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-query-results-json-format" aria-label="Links in this document to definition: SPARQL 1.2 Query Results JSON Format">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-results-json/spec/" aria-label="Permalink for definition: SPARQL 1.2 Query Results JSON Format. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-query-results-json-format-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-query-results-json-format-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-query-results-json-format-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-query-results-xml-formats" aria-label="Links in this document to definition: SPARQL 1.2 Query Results XML Formats">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-results-xml/spec/" aria-label="Permalink for definition: SPARQL 1.2 Query Results XML Formats. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-query-results-xml-formats-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-query-results-xml-formats-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-query-results-xml-formats-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-service-description" aria-label="Links in this document to definition: SPARQL 1.2 Service Description">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-service-description/spec/" aria-label="Permalink for definition: SPARQL 1.2 Service Description. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-service-description-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-service-description-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-service-description-3" title="Reference 2">(2)</a> 
-  </li>
-  </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-sparql-1-2-update" aria-label="Links in this document to definition: SPARQL 1.2 Update">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="https://w3c.github.io/sparql-update/spec/" aria-label="Permalink for definition: SPARQL 1.2 Update. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-index-term-sparql-1-2-update-1" title="§ Set of Documents">§ Set of Documents</a> 
-  </li><li>
-    <a href="#ref-for-index-term-sparql-1-2-update-2" title="§ E.1 Informative references">§ E.1 Informative references</a> <a href="#ref-for-index-term-sparql-1-2-update-3" title="Reference 2">(2)</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-date" aria-label="Links in this document to definition: date">
